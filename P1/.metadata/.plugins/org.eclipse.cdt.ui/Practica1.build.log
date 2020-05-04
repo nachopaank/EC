@@ -1,0 +1,24 @@
+16:49:49 **** Incremental Build of configuration Debug for project Practica1 ****
+cs-make all 
+'Building target: Practica1.elf'
+'Invoking: ARM Sourcery Windows GCC C Linker'
+arm-none-eabi-gcc -T"D:\EC\P1\Practica1\ld_script.ld" -nostartfiles -Wl,-Map,Practica1.map -mcpu=arm7tdmi -g3 -gdwarf-2 -o "Practica1.elf"  ./arit-ent.o ./main.o   
+'Finished building target: Practica1.elf'
+' '
+'Invoking: ARM Sourcery Windows GNU Create Flash Image'
+arm-none-eabi-objcopy -O binary Practica1.elf  "Practica1.hex"
+'Finished building: Practica1.hex'
+' '
+'Invoking: ARM Sourcery Windows GNU Create Listing'
+arm-none-eabi-objdump -h -S Practica1.elf > "Practica1.lst"
+'Finished building: Practica1.lst'
+' '
+'Invoking: ARM Sourcery Windows GNU Print Size'
+arm-none-eabi-size  --format=berkeley Practica1.elf
+   text	   data	    bss	    dec	    hex	filename
+    280	      0	     10	    290	    122	Practica1.elf
+'Finished building: Practica1.siz'
+' '
+
+16:49:50 Build Finished (took 606ms)
+

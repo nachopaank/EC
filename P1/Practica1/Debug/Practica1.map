@@ -1,0 +1,109 @@
+
+Allocating common symbols
+Common symbol       size              file
+
+x                   0x4               ./arit-ent.o
+y2                  0x2               ./arit-ent.o
+z                   0x1               ./arit-ent.o
+y1                  0x2               ./arit-ent.o
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+LOAD ./arit-ent.o
+LOAD ./main.o
+START GROUP
+LOAD d:/ec/eclipsearm/sourcery-g++-lite-arm-2011.03/bin/../lib/gcc/arm-none-eabi/4.5.2\libgcc.a
+LOAD d:/ec/eclipsearm/sourcery-g++-lite-arm-2011.03/bin/../lib/gcc/arm-none-eabi/4.5.2/../../../../arm-none-eabi/lib\libc.a
+END GROUP
+                0x0c000000                . = 0xc000000
+
+.data           0x0c000000        0x0
+ *(.data)
+ .data          0x0c000000        0x0 ./arit-ent.o
+ .data          0x0c000000        0x0 ./main.o
+ *(.rodata)
+
+.bss            0x0c000000        0xa
+ *(.bss)
+ .bss           0x0c000000        0x0 ./arit-ent.o
+ .bss           0x0c000000        0x0 ./main.o
+ *(COMMON)
+ COMMON         0x0c000000        0xa ./arit-ent.o
+                0x0c000000                x
+                0x0c000004                y2
+                0x0c000006                z
+                0x0c000008                y1
+
+.text           0x0c00000c      0x118
+ *(.text)
+ .text          0x0c00000c      0x104 ./arit-ent.o
+                0x0c00000c                main
+ .text          0x0c000110       0x14 ./main.o
+                0x0c000110                start
+                0x0c000124                PROVIDE (end, .)
+                0x0c7ff000                PROVIDE (_stack, 0xc7ff000)
+OUTPUT(Practica1.elf elf32-littlearm)
+
+.glue_7         0x0c000124        0x0
+ .glue_7        0x00000000        0x0 linker stubs
+
+.glue_7t        0x0c000124        0x0
+ .glue_7t       0x00000000        0x0 linker stubs
+
+.vfp11_veneer   0x0c000124        0x0
+ .vfp11_veneer  0x00000000        0x0 linker stubs
+
+.v4_bx          0x0c000124        0x0
+ .v4_bx         0x00000000        0x0 linker stubs
+
+.debug_abbrev   0x00000000       0x88
+ .debug_abbrev  0x00000000       0x74 ./arit-ent.o
+ .debug_abbrev  0x00000074       0x14 ./main.o
+
+.debug_info     0x00000000      0x137
+ .debug_info    0x00000000       0xeb ./arit-ent.o
+ .debug_info    0x000000eb       0x4c ./main.o
+
+.debug_line     0x00000000       0x83
+ .debug_line    0x00000000       0x49 ./arit-ent.o
+ .debug_line    0x00000049       0x3a ./main.o
+
+.debug_macinfo  0x00000000     0x20fc
+ .debug_macinfo
+                0x00000000     0x20fc ./arit-ent.o
+
+.debug_loc      0x00000000       0x2c
+ .debug_loc     0x00000000       0x2c ./arit-ent.o
+
+.debug_pubnames
+                0x00000000       0x35
+ .debug_pubnames
+                0x00000000       0x35 ./arit-ent.o
+
+.debug_aranges  0x00000000       0x40
+ .debug_aranges
+                0x00000000       0x20 ./arit-ent.o
+ .debug_aranges
+                0x00000020       0x20 ./main.o
+
+.debug_str      0x00000000       0x5a
+ .debug_str     0x00000000       0x5a ./arit-ent.o
+
+.comment        0x00000000       0x2a
+ .comment       0x00000000       0x2a ./arit-ent.o
+                                 0x2b (size before relaxing)
+
+.ARM.attributes
+                0x00000000       0x30
+ .ARM.attributes
+                0x00000000       0x32 ./arit-ent.o
+ .ARM.attributes
+                0x00000032       0x22 ./main.o
+
+.debug_frame    0x00000000       0x30
+ .debug_frame   0x00000000       0x30 ./arit-ent.o

@@ -1,0 +1,1201 @@
+17:43:35 **** Incremental Build of configuration Debug for project Practica2 ****
+cs-make all 
+'Building file: ../init.S'
+'Invoking: ARM Sourcery Windows GCC Assembler'
+arm-none-eabi-gcc -x assembler-with-cpp -Wall -Wa,-adhlns="init.o.lst" -c -fmessage-length=0 -MMD -MP -MF"init.d" -MT"init.d" -mcpu=arm7tdmi -g3 -gdwarf-2 -o "init.o" "../init.S"
+'Finished building: ../init.S'
+' '
+'Building target: Practica2.elf'
+'Invoking: ARM Sourcery Windows GCC C Linker'
+arm-none-eabi-gcc -T"D:\EC\P2\Practica2\ld_script.ld" -nostartfiles -Wl,-Map,Practica2.map -mcpu=arm7tdmi -g3 -gdwarf-2 -o "Practica2.elf"  ./D8Led.o ./button.o ./gpio.o ./init.o ./leds.o ./main.o ./utils.o   
+'Finished building target: Practica2.elf'
+' '
+'Invoking: ARM Sourcery Windows GNU Create Flash Image'
+arm-none-eabi-objcopy -O binary Practica2.elf  "Practica2.hex"
+'Finished building: Practica2.hex'
+' '
+'Invoking: ARM Sourcery Windows GNU Create Listing'
+arm-none-eabi-objdump -h -S Practica2.elf > "Practica2.lst"
+'Finished building: Practica2.lst'
+' '
+'Invoking: ARM Sourcery Windows GNU Print Size'
+arm-none-eabi-size  --format=berkeley Practica2.elf
+   text	   data	    bss	    dec	    hex	filename
+   3956	    120	      4	   4080	    ff0	Practica2.elf
+'Finished building: Practica2.siz'
+' '
+17:45:04 **** Incremental Build of configuration Debug for project Practica2 ****
+cs-make all 
+'Building file: ../main.c'
+'Invoking: ARM Sourcery Windows GCC C Compiler'
+arm-none-eabi-gcc -O0 -Wall -Wa,-adhlns="main.o.lst" -c -fmessage-length=0 -mapcs-frame -MMD -MP -MF"main.d" -MT"main.d" -mcpu=arm7tdmi -g3 -gdwarf-2 -o "main.o" "../main.c"
+'Finished building: ../main.c'
+' '
+'Building target: Practica2.elf'
+'Invoking: ARM Sourcery Windows GCC C Linker'
+arm-none-eabi-gcc -T"D:\EC\P2\Practica2\ld_script.ld" -nostartfiles -Wl,-Map,Practica2.map -mcpu=arm7tdmi -g3 -gdwarf-2 -o "Practica2.elf"  ./D8Led.o ./button.o ./gpio.o ./init.o ./leds.o ./main.o ./utils.o   
+'Finished building target: Practica2.elf'
+' '
+'Invoking: ARM Sourcery Windows GNU Create Flash Image'
+arm-none-eabi-objcopy -O binary Practica2.elf  "Practica2.hex"
+'Finished building: Practica2.hex'
+' '
+'Invoking: ARM Sourcery Windows GNU Create Listing'
+arm-none-eabi-objdump -h -S Practica2.elf > "Practica2.lst"
+'Finished building: Practica2.lst'
+' '
+'Invoking: ARM Sourcery Windows GNU Print Size'
+arm-none-eabi-size  --format=berkeley Practica2.elf
+   text	   data	    bss	    dec	    hex	filename
+   3956	    120	      4	   4080	    ff0	Practica2.elf
+'Finished building: Practica2.siz'
+' '
+17:52:07 **** Incremental Build of configuration Debug for project Practica2 ****
+cs-make all 
+'Building file: ../main.c'
+'Invoking: ARM Sourcery Windows GCC C Compiler'
+arm-none-eabi-gcc -O0 -Wall -Wa,-adhlns="main.o.lst" -c -fmessage-length=0 -mapcs-frame -MMD -MP -MF"main.d" -MT"main.d" -mcpu=arm7tdmi -g3 -gdwarf-2 -o "main.o" "../main.c"
+'Finished building: ../main.c'
+' '
+'Building target: Practica2.elf'
+'Invoking: ARM Sourcery Windows GCC C Linker'
+arm-none-eabi-gcc -T"D:\EC\P2\Practica2\ld_script.ld" -nostartfiles -Wl,-Map,Practica2.map -mcpu=arm7tdmi -g3 -gdwarf-2 -o "Practica2.elf"  ./D8Led.o ./button.o ./gpio.o ./init.o ./leds.o ./main.o ./utils.o   
+'Finished building target: Practica2.elf'
+' '
+'Invoking: ARM Sourcery Windows GNU Create Flash Image'
+arm-none-eabi-objcopy -O binary Practica2.elf  "Practica2.hex"
+'Finished building: Practica2.hex'
+' '
+'Invoking: ARM Sourcery Windows GNU Create Listing'
+arm-none-eabi-objdump -h -S Practica2.elf > "Practica2.lst"
+'Finished building: Practica2.lst'
+' '
+'Invoking: ARM Sourcery Windows GNU Print Size'
+arm-none-eabi-size  --format=berkeley Practica2.elf
+   text	   data	    bss	    dec	    hex	filename
+   3932	    120	      4	   4056	    fd8	Practica2.elf
+'Finished building: Practica2.siz'
+' '
+17:55:33 **** Incremental Build of configuration Debug for project Practica2 ****
+cs-make all 
+'Building file: ../main.c'
+'Invoking: ARM Sourcery Windows GCC C Compiler'
+arm-none-eabi-gcc -O0 -Wall -Wa,-adhlns="main.o.lst" -c -fmessage-length=0 -mapcs-frame -MMD -MP -MF"main.d" -MT"main.d" -mcpu=arm7tdmi -g3 -gdwarf-2 -o "main.o" "../main.c"
+'Finished building: ../main.c'
+' '
+'Building target: Practica2.elf'
+'Invoking: ARM Sourcery Windows GCC C Linker'
+arm-none-eabi-gcc -T"D:\EC\P2\Practica2\ld_script.ld" -nostartfiles -Wl,-Map,Practica2.map -mcpu=arm7tdmi -g3 -gdwarf-2 -o "Practica2.elf"  ./D8Led.o ./button.o ./gpio.o ./init.o ./leds.o ./main.o ./utils.o   
+'Finished building target: Practica2.elf'
+' '
+'Invoking: ARM Sourcery Windows GNU Create Flash Image'
+arm-none-eabi-objcopy -O binary Practica2.elf  "Practica2.hex"
+'Finished building: Practica2.hex'
+' '
+'Invoking: ARM Sourcery Windows GNU Create Listing'
+arm-none-eabi-objdump -h -S Practica2.elf > "Practica2.lst"
+'Finished building: Practica2.lst'
+' '
+'Invoking: ARM Sourcery Windows GNU Print Size'
+arm-none-eabi-size  --format=berkeley Practica2.elf
+   text	   data	    bss	    dec	    hex	filename
+   3940	    120	      4	   4064	    fe0	Practica2.elf
+'Finished building: Practica2.siz'
+' '
+12:15:41 **** Build of configuration Debug for project Practica2 ****
+cs-make all 
+'Building file: ../gpio.c'
+'Invoking: ARM Sourcery Windows GCC C Compiler'
+arm-none-eabi-gcc -O0 -Wall -Wa,-adhlns="gpio.o.lst" -c -fmessage-length=0 -mapcs-frame -MMD -MP -MF"gpio.d" -MT"gpio.d" -mcpu=arm7tdmi -g3 -gdwarf-2 -o "gpio.o" "../gpio.c"
+'Finished building: ../gpio.c'
+' '
+'Building target: Practica2.elf'
+'Invoking: ARM Sourcery Windows GCC C Linker'
+arm-none-eabi-gcc -T"D:\EC\P2\Practica2\ld_script.ld" -nostartfiles -Wl,-Map,Practica2.map -mcpu=arm7tdmi -g3 -gdwarf-2 -o "Practica2.elf"  ./D8Led.o ./button.o ./gpio.o ./init.o ./leds.o ./main.o ./utils.o   
+'Finished building target: Practica2.elf'
+' '
+'Invoking: ARM Sourcery Windows GNU Create Flash Image'
+arm-none-eabi-objcopy -O binary Practica2.elf  "Practica2.hex"
+'Finished building: Practica2.hex'
+' '
+'Invoking: ARM Sourcery Windows GNU Create Listing'
+arm-none-eabi-objdump -h -S Practica2.elf > "Practica2.lst"
+'Finished building: Practica2.lst'
+' '
+'Invoking: ARM Sourcery Windows GNU Print Size'
+arm-none-eabi-size  --format=berkeley Practica2.elf
+   text	   data	    bss	    dec	    hex	filename
+   3940	    120	      4	   4064	    fe0	Practica2.elf
+'Finished building: Practica2.siz'
+' '
+12:16:35 **** Incremental Build of configuration Debug for project Practica2 ****
+cs-make all 
+'Building file: ../leds.c'
+'Invoking: ARM Sourcery Windows GCC C Compiler'
+arm-none-eabi-gcc -O0 -Wall -Wa,-adhlns="leds.o.lst" -c -fmessage-length=0 -mapcs-frame -MMD -MP -MF"leds.d" -MT"leds.d" -mcpu=arm7tdmi -g3 -gdwarf-2 -o "leds.o" "../leds.c"
+'Finished building: ../leds.c'
+' '
+'Building target: Practica2.elf'
+'Invoking: ARM Sourcery Windows GCC C Linker'
+arm-none-eabi-gcc -T"D:\EC\P2\Practica2\ld_script.ld" -nostartfiles -Wl,-Map,Practica2.map -mcpu=arm7tdmi -g3 -gdwarf-2 -o "Practica2.elf"  ./D8Led.o ./button.o ./gpio.o ./init.o ./leds.o ./main.o ./utils.o   
+'Finished building target: Practica2.elf'
+' '
+'Invoking: ARM Sourcery Windows GNU Create Flash Image'
+arm-none-eabi-objcopy -O binary Practica2.elf  "Practica2.hex"
+'Finished building: Practica2.hex'
+' '
+'Invoking: ARM Sourcery Windows GNU Create Listing'
+arm-none-eabi-objdump -h -S Practica2.elf > "Practica2.lst"
+'Finished building: Practica2.lst'
+' '
+'Invoking: ARM Sourcery Windows GNU Print Size'
+arm-none-eabi-size  --format=berkeley Practica2.elf
+   text	   data	    bss	    dec	    hex	filename
+   3940	    120	      4	   4064	    fe0	Practica2.elf
+'Finished building: Practica2.siz'
+' '
+12:17:56 **** Incremental Build of configuration Debug for project Practica2 ****
+cs-make all 
+'Building file: ../gpio.c'
+'Invoking: ARM Sourcery Windows GCC C Compiler'
+arm-none-eabi-gcc -O0 -Wall -Wa,-adhlns="gpio.o.lst" -c -fmessage-length=0 -mapcs-frame -MMD -MP -MF"gpio.d" -MT"gpio.d" -mcpu=arm7tdmi -g3 -gdwarf-2 -o "gpio.o" "../gpio.c"
+../gpio.c: In function 'portB_conf':
+../gpio.c:14:6: warning: unused variable 'x'
+'Finished building: ../gpio.c'
+' '
+'Building target: Practica2.elf'
+'Invoking: ARM Sourcery Windows GCC C Linker'
+arm-none-eabi-gcc -T"D:\EC\P2\Practica2\ld_script.ld" -nostartfiles -Wl,-Map,Practica2.map -mcpu=arm7tdmi -g3 -gdwarf-2 -o "Practica2.elf"  ./D8Led.o ./button.o ./gpio.o ./init.o ./leds.o ./main.o ./utils.o   
+'Finished building target: Practica2.elf'
+' '
+'Invoking: ARM Sourcery Windows GNU Create Flash Image'
+arm-none-eabi-objcopy -O binary Practica2.elf  "Practica2.hex"
+'Finished building: Practica2.hex'
+' '
+'Invoking: ARM Sourcery Windows GNU Create Listing'
+arm-none-eabi-objdump -h -S Practica2.elf > "Practica2.lst"
+'Finished building: Practica2.lst'
+' '
+'Invoking: ARM Sourcery Windows GNU Print Size'
+arm-none-eabi-size  --format=berkeley Practica2.elf
+   text	   data	    bss	    dec	    hex	filename
+   3952	    120	      4	   4076	    fec	Practica2.elf
+'Finished building: Practica2.siz'
+' '
+12:21:09 **** Incremental Build of configuration Debug for project Practica2 ****
+cs-make all 
+'Building file: ../gpio.c'
+'Invoking: ARM Sourcery Windows GCC C Compiler'
+arm-none-eabi-gcc -O0 -Wall -Wa,-adhlns="gpio.o.lst" -c -fmessage-length=0 -mapcs-frame -MMD -MP -MF"gpio.d" -MT"gpio.d" -mcpu=arm7tdmi -g3 -gdwarf-2 -o "gpio.o" "../gpio.c"
+../gpio.c:4:24: error: expected identifier or '(' before 'volatile'
+../gpio.c:4:24: error: expected ')' before numeric constant
+../gpio.c:5:24: error: expected identifier or '(' before 'volatile'
+../gpio.c:5:24: error: expected ')' before numeric constant
+../gpio.c:6:24: error: expected identifier or '(' before 'volatile'
+../gpio.c:6:24: error: expected ')' before numeric constant
+../gpio.c:7:24: error: expected identifier or '(' before 'volatile'
+../gpio.c:7:24: error: expected ')' before numeric constant
+cs-make: *** [gpio.o] Error 1
+12:23:00 **** Incremental Build of configuration Debug for project Practica2 ****
+cs-make all 
+'Building file: ../D8Led.c'
+'Invoking: ARM Sourcery Windows GCC C Compiler'
+arm-none-eabi-gcc -O0 -Wall -Wa,-adhlns="D8Led.o.lst" -c -fmessage-length=0 -mapcs-frame -MMD -MP -MF"D8Led.d" -MT"D8Led.d" -mcpu=arm7tdmi -g3 -gdwarf-2 -o "D8Led.o" "../D8Led.c"
+'Finished building: ../D8Led.c'
+' '
+'Building file: ../button.c'
+'Invoking: ARM Sourcery Windows GCC C Compiler'
+arm-none-eabi-gcc -O0 -Wall -Wa,-adhlns="button.o.lst" -c -fmessage-length=0 -mapcs-frame -MMD -MP -MF"button.d" -MT"button.d" -mcpu=arm7tdmi -g3 -gdwarf-2 -o "button.o" "../button.c"
+'Finished building: ../button.c'
+' '
+'Building file: ../gpio.c'
+'Invoking: ARM Sourcery Windows GCC C Compiler'
+arm-none-eabi-gcc -O0 -Wall -Wa,-adhlns="gpio.o.lst" -c -fmessage-length=0 -mapcs-frame -MMD -MP -MF"gpio.d" -MT"gpio.d" -mcpu=arm7tdmi -g3 -gdwarf-2 -o "gpio.o" "../gpio.c"
+../gpio.c:6:33: warning: initialization makes pointer from integer without a cast
+../gpio.c:7:33: warning: initialization makes pointer from integer without a cast
+../gpio.c:8:34: warning: initialization makes pointer from integer without a cast
+../gpio.c:9:33: warning: initialization makes pointer from integer without a cast
+../gpio.c: In function 'portB_conf':
+../gpio.c:18:10: error: invalid operands to binary | (have 'volatile unsigned int *' and 'int')
+../gpio.c:23:10: error: invalid operands to binary & (have 'volatile unsigned int *' and 'int')
+../gpio.c: In function 'portB_write':
+../gpio.c:43:10: error: invalid operands to binary | (have 'volatile unsigned int *' and 'int')
+../gpio.c:47:10: error: invalid operands to binary & (have 'volatile unsigned int *' and 'int')
+../gpio.c: In function 'portG_write':
+../gpio.c:112:9: error: invalid operands to binary | (have 'volatile unsigned int *' and 'int')
+../gpio.c:115:10: error: invalid operands to binary & (have 'volatile unsigned int *' and 'int')
+../gpio.c: In function 'portG_read':
+../gpio.c:131:13: error: invalid operands to binary & (have 'volatile unsigned int *' and 'int')
+cs-make: *** [gpio.o] Error 1
+12:23:29 **** Incremental Build of configuration Debug for project Practica2 ****
+cs-make all 
+'Building file: ../gpio.c'
+'Invoking: ARM Sourcery Windows GCC C Compiler'
+arm-none-eabi-gcc -O0 -Wall -Wa,-adhlns="gpio.o.lst" -c -fmessage-length=0 -mapcs-frame -MMD -MP -MF"gpio.d" -MT"gpio.d" -mcpu=arm7tdmi -g3 -gdwarf-2 -o "gpio.o" "../gpio.c"
+../gpio.c:6:29: warning: initialization makes pointer from integer without a cast
+../gpio.c:7:29: warning: initialization makes pointer from integer without a cast
+../gpio.c:8:30: warning: initialization makes pointer from integer without a cast
+../gpio.c:9:29: warning: initialization makes pointer from integer without a cast
+../gpio.c: In function 'portB_conf':
+../gpio.c:18:10: error: invalid operands to binary | (have 'volatile unsigned int *' and 'int')
+../gpio.c:23:10: error: invalid operands to binary & (have 'volatile unsigned int *' and 'int')
+../gpio.c: In function 'portB_write':
+../gpio.c:43:10: error: invalid operands to binary | (have 'volatile unsigned int *' and 'int')
+../gpio.c:47:10: error: invalid operands to binary & (have 'volatile unsigned int *' and 'int')
+../gpio.c: In function 'portG_write':
+../gpio.c:112:9: error: invalid operands to binary | (have 'volatile unsigned int *' and 'int')
+../gpio.c:115:10: error: invalid operands to binary & (have 'volatile unsigned int *' and 'int')
+../gpio.c: In function 'portG_read':
+../gpio.c:131:13: error: invalid operands to binary & (have 'volatile unsigned int *' and 'int')
+cs-make: *** [gpio.o] Error 1
+12:23:48 **** Incremental Build of configuration Debug for project Practica2 ****
+cs-make all 
+'Building file: ../gpio.c'
+'Invoking: ARM Sourcery Windows GCC C Compiler'
+arm-none-eabi-gcc -O0 -Wall -Wa,-adhlns="gpio.o.lst" -c -fmessage-length=0 -mapcs-frame -MMD -MP -MF"gpio.d" -MT"gpio.d" -mcpu=arm7tdmi -g3 -gdwarf-2 -o "gpio.o" "../gpio.c"
+'Finished building: ../gpio.c'
+' '
+'Building file: ../leds.c'
+'Invoking: ARM Sourcery Windows GCC C Compiler'
+arm-none-eabi-gcc -O0 -Wall -Wa,-adhlns="leds.o.lst" -c -fmessage-length=0 -mapcs-frame -MMD -MP -MF"leds.d" -MT"leds.d" -mcpu=arm7tdmi -g3 -gdwarf-2 -o "leds.o" "../leds.c"
+'Finished building: ../leds.c'
+' '
+'Building file: ../main.c'
+'Invoking: ARM Sourcery Windows GCC C Compiler'
+arm-none-eabi-gcc -O0 -Wall -Wa,-adhlns="main.o.lst" -c -fmessage-length=0 -mapcs-frame -MMD -MP -MF"main.d" -MT"main.d" -mcpu=arm7tdmi -g3 -gdwarf-2 -o "main.o" "../main.c"
+'Finished building: ../main.c'
+' '
+'Building file: ../utils.c'
+'Invoking: ARM Sourcery Windows GCC C Compiler'
+arm-none-eabi-gcc -O0 -Wall -Wa,-adhlns="utils.o.lst" -c -fmessage-length=0 -mapcs-frame -MMD -MP -MF"utils.d" -MT"utils.d" -mcpu=arm7tdmi -g3 -gdwarf-2 -o "utils.o" "../utils.c"
+'Finished building: ../utils.c'
+' '
+'Building target: Practica2.elf'
+'Invoking: ARM Sourcery Windows GCC C Linker'
+arm-none-eabi-gcc -T"D:\EC\P2\Practica2\ld_script.ld" -nostartfiles -Wl,-Map,Practica2.map -mcpu=arm7tdmi -g3 -gdwarf-2 -o "Practica2.elf"  ./D8Led.o ./button.o ./gpio.o ./init.o ./leds.o ./main.o ./utils.o   
+'Finished building target: Practica2.elf'
+' '
+'Invoking: ARM Sourcery Windows GNU Create Flash Image'
+arm-none-eabi-objcopy -O binary Practica2.elf  "Practica2.hex"
+'Finished building: Practica2.hex'
+' '
+'Invoking: ARM Sourcery Windows GNU Create Listing'
+arm-none-eabi-objdump -h -S Practica2.elf > "Practica2.lst"
+'Finished building: Practica2.lst'
+' '
+'Invoking: ARM Sourcery Windows GNU Print Size'
+arm-none-eabi-size  --format=berkeley Practica2.elf
+   text	   data	    bss	    dec	    hex	filename
+   3940	    120	      4	   4064	    fe0	Practica2.elf
+'Finished building: Practica2.siz'
+' '
+12:24:53 **** Incremental Build of configuration Debug for project Practica2 ****
+cs-make all 
+'Building file: ../gpio.c'
+'Invoking: ARM Sourcery Windows GCC C Compiler'
+arm-none-eabi-gcc -O0 -Wall -Wa,-adhlns="gpio.o.lst" -c -fmessage-length=0 -mapcs-frame -MMD -MP -MF"gpio.d" -MT"gpio.d" -mcpu=arm7tdmi -g3 -gdwarf-2 -o "gpio.o" "../gpio.c"
+../gpio.c: In function 'portB_conf':
+../gpio.c:14:6: warning: unused variable 'x'
+'Finished building: ../gpio.c'
+' '
+'Building target: Practica2.elf'
+'Invoking: ARM Sourcery Windows GCC C Linker'
+arm-none-eabi-gcc -T"D:\EC\P2\Practica2\ld_script.ld" -nostartfiles -Wl,-Map,Practica2.map -mcpu=arm7tdmi -g3 -gdwarf-2 -o "Practica2.elf"  ./D8Led.o ./button.o ./gpio.o ./init.o ./leds.o ./main.o ./utils.o   
+'Finished building target: Practica2.elf'
+' '
+'Invoking: ARM Sourcery Windows GNU Create Flash Image'
+arm-none-eabi-objcopy -O binary Practica2.elf  "Practica2.hex"
+'Finished building: Practica2.hex'
+' '
+'Invoking: ARM Sourcery Windows GNU Create Listing'
+arm-none-eabi-objdump -h -S Practica2.elf > "Practica2.lst"
+'Finished building: Practica2.lst'
+' '
+'Invoking: ARM Sourcery Windows GNU Print Size'
+arm-none-eabi-size  --format=berkeley Practica2.elf
+   text	   data	    bss	    dec	    hex	filename
+   3952	    120	      4	   4076	    fec	Practica2.elf
+'Finished building: Practica2.siz'
+' '
+12:26:44 **** Incremental Build of configuration Debug for project Practica2 ****
+cs-make all 
+'Building file: ../D8Led.c'
+'Invoking: ARM Sourcery Windows GCC C Compiler'
+arm-none-eabi-gcc -O0 -Wall -Wa,-adhlns="D8Led.o.lst" -c -fmessage-length=0 -mapcs-frame -MMD -MP -MF"D8Led.d" -MT"D8Led.d" -mcpu=arm7tdmi -g3 -gdwarf-2 -o "D8Led.o" "../D8Led.c"
+'Finished building: ../D8Led.c'
+' '
+'Building file: ../button.c'
+'Invoking: ARM Sourcery Windows GCC C Compiler'
+arm-none-eabi-gcc -O0 -Wall -Wa,-adhlns="button.o.lst" -c -fmessage-length=0 -mapcs-frame -MMD -MP -MF"button.d" -MT"button.d" -mcpu=arm7tdmi -g3 -gdwarf-2 -o "button.o" "../button.c"
+'Finished building: ../button.c'
+' '
+'Building file: ../gpio.c'
+'Invoking: ARM Sourcery Windows GCC C Compiler'
+arm-none-eabi-gcc -O0 -Wall -Wa,-adhlns="gpio.o.lst" -c -fmessage-length=0 -mapcs-frame -MMD -MP -MF"gpio.d" -MT"gpio.d" -mcpu=arm7tdmi -g3 -gdwarf-2 -o "gpio.o" "../gpio.c"
+../gpio.c: In function 'portB_conf':
+../gpio.c:9:6: warning: unused variable 'x'
+'Finished building: ../gpio.c'
+' '
+'Building file: ../leds.c'
+'Invoking: ARM Sourcery Windows GCC C Compiler'
+arm-none-eabi-gcc -O0 -Wall -Wa,-adhlns="leds.o.lst" -c -fmessage-length=0 -mapcs-frame -MMD -MP -MF"leds.d" -MT"leds.d" -mcpu=arm7tdmi -g3 -gdwarf-2 -o "leds.o" "../leds.c"
+'Finished building: ../leds.c'
+' '
+'Building file: ../main.c'
+'Invoking: ARM Sourcery Windows GCC C Compiler'
+arm-none-eabi-gcc -O0 -Wall -Wa,-adhlns="main.o.lst" -c -fmessage-length=0 -mapcs-frame -MMD -MP -MF"main.d" -MT"main.d" -mcpu=arm7tdmi -g3 -gdwarf-2 -o "main.o" "../main.c"
+'Finished building: ../main.c'
+' '
+'Building file: ../utils.c'
+'Invoking: ARM Sourcery Windows GCC C Compiler'
+arm-none-eabi-gcc -O0 -Wall -Wa,-adhlns="utils.o.lst" -c -fmessage-length=0 -mapcs-frame -MMD -MP -MF"utils.d" -MT"utils.d" -mcpu=arm7tdmi -g3 -gdwarf-2 -o "utils.o" "../utils.c"
+'Finished building: ../utils.c'
+' '
+'Building target: Practica2.elf'
+'Invoking: ARM Sourcery Windows GCC C Linker'
+arm-none-eabi-gcc -T"D:\EC\P2\Practica2\ld_script.ld" -nostartfiles -Wl,-Map,Practica2.map -mcpu=arm7tdmi -g3 -gdwarf-2 -o "Practica2.elf"  ./D8Led.o ./button.o ./gpio.o ./init.o ./leds.o ./main.o ./utils.o   
+'Finished building target: Practica2.elf'
+' '
+'Invoking: ARM Sourcery Windows GNU Create Flash Image'
+arm-none-eabi-objcopy -O binary Practica2.elf  "Practica2.hex"
+'Finished building: Practica2.hex'
+' '
+'Invoking: ARM Sourcery Windows GNU Create Listing'
+arm-none-eabi-objdump -h -S Practica2.elf > "Practica2.lst"
+'Finished building: Practica2.lst'
+' '
+'Invoking: ARM Sourcery Windows GNU Print Size'
+arm-none-eabi-size  --format=berkeley Practica2.elf
+   text	   data	    bss	    dec	    hex	filename
+   3952	    120	      4	   4076	    fec	Practica2.elf
+'Finished building: Practica2.siz'
+' '
+12:30:12 **** Incremental Build of configuration Debug for project Practica2 ****
+cs-make all 
+'Building file: ../gpio.c'
+'Invoking: ARM Sourcery Windows GCC C Compiler'
+arm-none-eabi-gcc -O0 -Wall -Wa,-adhlns="gpio.o.lst" -c -fmessage-length=0 -mapcs-frame -MMD -MP -MF"gpio.d" -MT"gpio.d" -mcpu=arm7tdmi -g3 -gdwarf-2 -o "gpio.o" "../gpio.c"
+../gpio.c: In function 'portB_conf':
+../gpio.c:9:6: warning: unused variable 'x'
+../gpio.c: In function 'portB_write':
+../gpio.c:31:6: warning: unused variable 'x'
+'Finished building: ../gpio.c'
+' '
+'Building target: Practica2.elf'
+'Invoking: ARM Sourcery Windows GCC C Linker'
+arm-none-eabi-gcc -T"D:\EC\P2\Practica2\ld_script.ld" -nostartfiles -Wl,-Map,Practica2.map -mcpu=arm7tdmi -g3 -gdwarf-2 -o "Practica2.elf"  ./D8Led.o ./button.o ./gpio.o ./init.o ./leds.o ./main.o ./utils.o   
+'Finished building target: Practica2.elf'
+' '
+'Invoking: ARM Sourcery Windows GNU Create Flash Image'
+arm-none-eabi-objcopy -O binary Practica2.elf  "Practica2.hex"
+'Finished building: Practica2.hex'
+' '
+'Invoking: ARM Sourcery Windows GNU Create Listing'
+arm-none-eabi-objdump -h -S Practica2.elf > "Practica2.lst"
+'Finished building: Practica2.lst'
+' '
+'Invoking: ARM Sourcery Windows GNU Print Size'
+arm-none-eabi-size  --format=berkeley Practica2.elf
+   text	   data	    bss	    dec	    hex	filename
+   3964	    120	      4	   4088	    ff8	Practica2.elf
+'Finished building: Practica2.siz'
+' '
+12:33:45 **** Incremental Build of configuration Debug for project Practica2 ****
+cs-make all 
+'Building file: ../gpio.c'
+'Invoking: ARM Sourcery Windows GCC C Compiler'
+arm-none-eabi-gcc -O0 -Wall -Wa,-adhlns="gpio.o.lst" -c -fmessage-length=0 -mapcs-frame -MMD -MP -MF"gpio.d" -MT"gpio.d" -mcpu=arm7tdmi -g3 -gdwarf-2 -o "gpio.o" "../gpio.c"
+../gpio.c: In function 'portB_conf':
+../gpio.c:9:6: warning: unused variable 'x'
+../gpio.c: In function 'portB_write':
+../gpio.c:31:20: warning: unused variable 'x'
+'Finished building: ../gpio.c'
+' '
+'Building target: Practica2.elf'
+'Invoking: ARM Sourcery Windows GCC C Linker'
+arm-none-eabi-gcc -T"D:\EC\P2\Practica2\ld_script.ld" -nostartfiles -Wl,-Map,Practica2.map -mcpu=arm7tdmi -g3 -gdwarf-2 -o "Practica2.elf"  ./D8Led.o ./button.o ./gpio.o ./init.o ./leds.o ./main.o ./utils.o   
+'Finished building target: Practica2.elf'
+' '
+'Invoking: ARM Sourcery Windows GNU Create Flash Image'
+arm-none-eabi-objcopy -O binary Practica2.elf  "Practica2.hex"
+'Finished building: Practica2.hex'
+' '
+'Invoking: ARM Sourcery Windows GNU Create Listing'
+arm-none-eabi-objdump -h -S Practica2.elf > "Practica2.lst"
+'Finished building: Practica2.lst'
+' '
+'Invoking: ARM Sourcery Windows GNU Print Size'
+arm-none-eabi-size  --format=berkeley Practica2.elf
+   text	   data	    bss	    dec	    hex	filename
+   3964	    120	      4	   4088	    ff8	Practica2.elf
+'Finished building: Practica2.siz'
+' '
+12:35:49 **** Incremental Build of configuration Debug for project Practica2 ****
+cs-make all 
+'Building file: ../main.c'
+'Invoking: ARM Sourcery Windows GCC C Compiler'
+arm-none-eabi-gcc -O0 -Wall -Wa,-adhlns="main.o.lst" -c -fmessage-length=0 -mapcs-frame -MMD -MP -MF"main.d" -MT"main.d" -mcpu=arm7tdmi -g3 -gdwarf-2 -o "main.o" "../main.c"
+../main.c: In function 'setup':
+../main.c:29:20: warning: unused variable 'y'
+../main.c:28:20: warning: unused variable 'x'
+'Finished building: ../main.c'
+' '
+'Building target: Practica2.elf'
+'Invoking: ARM Sourcery Windows GCC C Linker'
+arm-none-eabi-gcc -T"D:\EC\P2\Practica2\ld_script.ld" -nostartfiles -Wl,-Map,Practica2.map -mcpu=arm7tdmi -g3 -gdwarf-2 -o "Practica2.elf"  ./D8Led.o ./button.o ./gpio.o ./init.o ./leds.o ./main.o ./utils.o   
+'Finished building target: Practica2.elf'
+' '
+'Invoking: ARM Sourcery Windows GNU Create Flash Image'
+arm-none-eabi-objcopy -O binary Practica2.elf  "Practica2.hex"
+'Finished building: Practica2.hex'
+' '
+'Invoking: ARM Sourcery Windows GNU Create Listing'
+arm-none-eabi-objdump -h -S Practica2.elf > "Practica2.lst"
+'Finished building: Practica2.lst'
+' '
+'Invoking: ARM Sourcery Windows GNU Print Size'
+arm-none-eabi-size  --format=berkeley Practica2.elf
+   text	   data	    bss	    dec	    hex	filename
+   4000	    120	      4	   4124	   101c	Practica2.elf
+'Finished building: Practica2.siz'
+' '
+12:36:32 **** Incremental Build of configuration Debug for project Practica2 ****
+cs-make all 
+'Building file: ../main.c'
+'Invoking: ARM Sourcery Windows GCC C Compiler'
+arm-none-eabi-gcc -O0 -Wall -Wa,-adhlns="main.o.lst" -c -fmessage-length=0 -mapcs-frame -MMD -MP -MF"main.d" -MT"main.d" -mcpu=arm7tdmi -g3 -gdwarf-2 -o "main.o" "../main.c"
+../main.c: In function 'setup':
+../main.c:29:6: warning: unused variable 'y'
+../main.c:28:6: warning: unused variable 'x'
+'Finished building: ../main.c'
+' '
+'Building target: Practica2.elf'
+'Invoking: ARM Sourcery Windows GCC C Linker'
+arm-none-eabi-gcc -T"D:\EC\P2\Practica2\ld_script.ld" -nostartfiles -Wl,-Map,Practica2.map -mcpu=arm7tdmi -g3 -gdwarf-2 -o "Practica2.elf"  ./D8Led.o ./button.o ./gpio.o ./init.o ./leds.o ./main.o ./utils.o   
+'Finished building target: Practica2.elf'
+' '
+'Invoking: ARM Sourcery Windows GNU Create Flash Image'
+arm-none-eabi-objcopy -O binary Practica2.elf  "Practica2.hex"
+'Finished building: Practica2.hex'
+' '
+'Invoking: ARM Sourcery Windows GNU Create Listing'
+arm-none-eabi-objdump -h -S Practica2.elf > "Practica2.lst"
+'Finished building: Practica2.lst'
+' '
+'Invoking: ARM Sourcery Windows GNU Print Size'
+arm-none-eabi-size  --format=berkeley Practica2.elf
+   text	   data	    bss	    dec	    hex	filename
+   4000	    120	      4	   4124	   101c	Practica2.elf
+'Finished building: Practica2.siz'
+' '
+12:37:31 **** Incremental Build of configuration Debug for project Practica2 ****
+cs-make all 
+'Building file: ../main.c'
+'Invoking: ARM Sourcery Windows GCC C Compiler'
+arm-none-eabi-gcc -O0 -Wall -Wa,-adhlns="main.o.lst" -c -fmessage-length=0 -mapcs-frame -MMD -MP -MF"main.d" -MT"main.d" -mcpu=arm7tdmi -g3 -gdwarf-2 -o "main.o" "../main.c"
+'Finished building: ../main.c'
+' '
+'Building target: Practica2.elf'
+'Invoking: ARM Sourcery Windows GCC C Linker'
+arm-none-eabi-gcc -T"D:\EC\P2\Practica2\ld_script.ld" -nostartfiles -Wl,-Map,Practica2.map -mcpu=arm7tdmi -g3 -gdwarf-2 -o "Practica2.elf"  ./D8Led.o ./button.o ./gpio.o ./init.o ./leds.o ./main.o ./utils.o   
+'Finished building target: Practica2.elf'
+' '
+'Invoking: ARM Sourcery Windows GNU Create Flash Image'
+arm-none-eabi-objcopy -O binary Practica2.elf  "Practica2.hex"
+'Finished building: Practica2.hex'
+' '
+'Invoking: ARM Sourcery Windows GNU Create Listing'
+arm-none-eabi-objdump -h -S Practica2.elf > "Practica2.lst"
+'Finished building: Practica2.lst'
+' '
+'Invoking: ARM Sourcery Windows GNU Print Size'
+arm-none-eabi-size  --format=berkeley Practica2.elf
+   text	   data	    bss	    dec	    hex	filename
+   3964	    120	      4	   4088	    ff8	Practica2.elf
+'Finished building: Practica2.siz'
+' '
+09:54:36 **** Incremental Build of configuration Debug for project Practica2 ****
+cs-make all 
+'Building file: ../gpio.c'
+'Invoking: ARM Sourcery Windows GCC C Compiler'
+arm-none-eabi-gcc -O0 -Wall -Wa,-adhlns="gpio.o.lst" -c -fmessage-length=0 -mapcs-frame -MMD -MP -MF"gpio.d" -MT"gpio.d" -mcpu=arm7tdmi -g3 -gdwarf-2 -o "gpio.o" "../gpio.c"
+'Finished building: ../gpio.c'
+' '
+'Building file: ../main.c'
+'Invoking: ARM Sourcery Windows GCC C Compiler'
+arm-none-eabi-gcc -O0 -Wall -Wa,-adhlns="main.o.lst" -c -fmessage-length=0 -mapcs-frame -MMD -MP -MF"main.d" -MT"main.d" -mcpu=arm7tdmi -g3 -gdwarf-2 -o "main.o" "../main.c"
+'Finished building: ../main.c'
+' '
+'Building target: Practica2.elf'
+'Invoking: ARM Sourcery Windows GCC C Linker'
+arm-none-eabi-gcc -T"D:\EC\P2\Practica2\ld_script.ld" -nostartfiles -Wl,-Map,Practica2.map -mcpu=arm7tdmi -g3 -gdwarf-2 -o "Practica2.elf"  ./D8Led.o ./button.o ./gpio.o ./init.o ./leds.o ./main.o ./utils.o   
+'Finished building target: Practica2.elf'
+' '
+'Invoking: ARM Sourcery Windows GNU Create Flash Image'
+arm-none-eabi-objcopy -O binary Practica2.elf  "Practica2.hex"
+'Finished building: Practica2.hex'
+' '
+'Invoking: ARM Sourcery Windows GNU Create Listing'
+arm-none-eabi-objdump -h -S Practica2.elf > "Practica2.lst"
+'Finished building: Practica2.lst'
+' '
+'Invoking: ARM Sourcery Windows GNU Print Size'
+arm-none-eabi-size  --format=berkeley Practica2.elf
+   text	   data	    bss	    dec	    hex	filename
+   3932	    120	      4	   4056	    fd8	Practica2.elf
+'Finished building: Practica2.siz'
+' '
+09:55:01 **** Incremental Build of configuration Debug for project Practica2 ****
+cs-make all 
+'Invoking: ARM Sourcery Windows GNU Print Size'
+arm-none-eabi-size  --format=berkeley Practica2.elf
+   text	   data	    bss	    dec	    hex	filename
+   3932	    120	      4	   4056	    fd8	Practica2.elf
+'Finished building: Practica2.siz'
+' '
+09:55:33 **** Incremental Build of configuration Debug for project Practica2 ****
+cs-make all 
+'Invoking: ARM Sourcery Windows GNU Print Size'
+arm-none-eabi-size  --format=berkeley Practica2.elf
+   text	   data	    bss	    dec	    hex	filename
+   3932	    120	      4	   4056	    fd8	Practica2.elf
+'Finished building: Practica2.siz'
+' '
+09:59:21 **** Incremental Build of configuration Debug for project Practica2 ****
+cs-make all 
+'Invoking: ARM Sourcery Windows GNU Print Size'
+arm-none-eabi-size  --format=berkeley Practica2.elf
+   text	   data	    bss	    dec	    hex	filename
+   3932	    120	      4	   4056	    fd8	Practica2.elf
+'Finished building: Practica2.siz'
+' '
+09:59:52 **** Incremental Build of configuration Debug for project Practica2 ****
+cs-make all 
+'Invoking: ARM Sourcery Windows GNU Print Size'
+arm-none-eabi-size  --format=berkeley Practica2.elf
+   text	   data	    bss	    dec	    hex	filename
+   3932	    120	      4	   4056	    fd8	Practica2.elf
+'Finished building: Practica2.siz'
+' '
+10:48:48 **** Incremental Build of configuration Debug for project Practica2 ****
+cs-make all 
+'Invoking: ARM Sourcery Windows GNU Print Size'
+arm-none-eabi-size  --format=berkeley Practica2.elf
+   text	   data	    bss	    dec	    hex	filename
+   3932	    120	      4	   4056	    fd8	Practica2.elf
+'Finished building: Practica2.siz'
+' '
+10:49:09 **** Incremental Build of configuration Debug for project Practica2 ****
+cs-make all 
+'Invoking: ARM Sourcery Windows GNU Print Size'
+arm-none-eabi-size  --format=berkeley Practica2.elf
+   text	   data	    bss	    dec	    hex	filename
+   3932	    120	      4	   4056	    fd8	Practica2.elf
+'Finished building: Practica2.siz'
+' '
+10:50:36 **** Incremental Build of configuration Debug for project Practica2 ****
+cs-make all 
+'Invoking: ARM Sourcery Windows GNU Print Size'
+arm-none-eabi-size  --format=berkeley Practica2.elf
+   text	   data	    bss	    dec	    hex	filename
+   3932	    120	      4	   4056	    fd8	Practica2.elf
+'Finished building: Practica2.siz'
+' '
+10:51:19 **** Incremental Build of configuration Debug for project Practica2 ****
+cs-make all 
+'Invoking: ARM Sourcery Windows GNU Print Size'
+arm-none-eabi-size  --format=berkeley Practica2.elf
+   text	   data	    bss	    dec	    hex	filename
+   3932	    120	      4	   4056	    fd8	Practica2.elf
+'Finished building: Practica2.siz'
+' '
+10:51:26 **** Incremental Build of configuration Debug for project Practica2 ****
+cs-make all 
+'Invoking: ARM Sourcery Windows GNU Print Size'
+arm-none-eabi-size  --format=berkeley Practica2.elf
+   text	   data	    bss	    dec	    hex	filename
+   3932	    120	      4	   4056	    fd8	Practica2.elf
+'Finished building: Practica2.siz'
+' '
+10:53:08 **** Incremental Build of configuration Debug for project Practica2 ****
+cs-make all 
+'Invoking: ARM Sourcery Windows GNU Print Size'
+arm-none-eabi-size  --format=berkeley Practica2.elf
+   text	   data	    bss	    dec	    hex	filename
+   3932	    120	      4	   4056	    fd8	Practica2.elf
+'Finished building: Practica2.siz'
+' '
+10:53:19 **** Incremental Build of configuration Debug for project Practica2 ****
+cs-make all 
+'Building file: ../main.c'
+'Invoking: ARM Sourcery Windows GCC C Compiler'
+arm-none-eabi-gcc -O0 -Wall -Wa,-adhlns="main.o.lst" -c -fmessage-length=0 -mapcs-frame -MMD -MP -MF"main.d" -MT"main.d" -mcpu=arm7tdmi -g3 -gdwarf-2 -o "main.o" "../main.c"
+'Finished building: ../main.c'
+' '
+'Building target: Practica2.elf'
+'Invoking: ARM Sourcery Windows GCC C Linker'
+arm-none-eabi-gcc -T"D:\EC\P2\Practica2\ld_script.ld" -nostartfiles -Wl,-Map,Practica2.map -mcpu=arm7tdmi -g3 -gdwarf-2 -o "Practica2.elf"  ./D8Led.o ./button.o ./gpio.o ./init.o ./leds.o ./main.o ./utils.o   
+'Finished building target: Practica2.elf'
+' '
+'Invoking: ARM Sourcery Windows GNU Create Flash Image'
+arm-none-eabi-objcopy -O binary Practica2.elf  "Practica2.hex"
+'Finished building: Practica2.hex'
+' '
+'Invoking: ARM Sourcery Windows GNU Create Listing'
+arm-none-eabi-objdump -h -S Practica2.elf > "Practica2.lst"
+'Finished building: Practica2.lst'
+' '
+'Invoking: ARM Sourcery Windows GNU Print Size'
+arm-none-eabi-size  --format=berkeley Practica2.elf
+   text	   data	    bss	    dec	    hex	filename
+   3932	    120	      4	   4056	    fd8	Practica2.elf
+'Finished building: Practica2.siz'
+' '
+10:53:29 **** Incremental Build of configuration Debug for project Practica2 ****
+cs-make all 
+'Invoking: ARM Sourcery Windows GNU Print Size'
+arm-none-eabi-size  --format=berkeley Practica2.elf
+   text	   data	    bss	    dec	    hex	filename
+   3932	    120	      4	   4056	    fd8	Practica2.elf
+'Finished building: Practica2.siz'
+' '
+10:53:34 **** Incremental Build of configuration Debug for project Practica2 ****
+cs-make all 
+'Invoking: ARM Sourcery Windows GNU Print Size'
+arm-none-eabi-size  --format=berkeley Practica2.elf
+   text	   data	    bss	    dec	    hex	filename
+   3932	    120	      4	   4056	    fd8	Practica2.elf
+'Finished building: Practica2.siz'
+' '
+10:54:50 **** Incremental Build of configuration Debug for project Practica2 ****
+cs-make all 
+'Building file: ../main.c'
+'Invoking: ARM Sourcery Windows GCC C Compiler'
+arm-none-eabi-gcc -O0 -Wall -Wa,-adhlns="main.o.lst" -c -fmessage-length=0 -mapcs-frame -MMD -MP -MF"main.d" -MT"main.d" -mcpu=arm7tdmi -g3 -gdwarf-2 -o "main.o" "../main.c"
+'Finished building: ../main.c'
+' '
+'Building target: Practica2.elf'
+'Invoking: ARM Sourcery Windows GCC C Linker'
+arm-none-eabi-gcc -T"D:\EC\P2\Practica2\ld_script.ld" -nostartfiles -Wl,-Map,Practica2.map -mcpu=arm7tdmi -g3 -gdwarf-2 -o "Practica2.elf"  ./D8Led.o ./button.o ./gpio.o ./init.o ./leds.o ./main.o ./utils.o   
+'Finished building target: Practica2.elf'
+' '
+'Invoking: ARM Sourcery Windows GNU Create Flash Image'
+arm-none-eabi-objcopy -O binary Practica2.elf  "Practica2.hex"
+'Finished building: Practica2.hex'
+' '
+'Invoking: ARM Sourcery Windows GNU Create Listing'
+arm-none-eabi-objdump -h -S Practica2.elf > "Practica2.lst"
+'Finished building: Practica2.lst'
+' '
+'Invoking: ARM Sourcery Windows GNU Print Size'
+arm-none-eabi-size  --format=berkeley Practica2.elf
+   text	   data	    bss	    dec	    hex	filename
+   3940	    120	      4	   4064	    fe0	Practica2.elf
+'Finished building: Practica2.siz'
+' '
+10:54:58 **** Incremental Build of configuration Debug for project Practica2 ****
+cs-make all 
+'Invoking: ARM Sourcery Windows GNU Print Size'
+arm-none-eabi-size  --format=berkeley Practica2.elf
+   text	   data	    bss	    dec	    hex	filename
+   3940	    120	      4	   4064	    fe0	Practica2.elf
+'Finished building: Practica2.siz'
+' '
+10:55:20 **** Incremental Build of configuration Debug for project Practica2 ****
+cs-make all 
+'Invoking: ARM Sourcery Windows GNU Print Size'
+arm-none-eabi-size  --format=berkeley Practica2.elf
+   text	   data	    bss	    dec	    hex	filename
+   3940	    120	      4	   4064	    fe0	Practica2.elf
+'Finished building: Practica2.siz'
+' '
+10:55:26 **** Incremental Build of configuration Debug for project Practica2 ****
+cs-make all 
+'Invoking: ARM Sourcery Windows GNU Print Size'
+arm-none-eabi-size  --format=berkeley Practica2.elf
+   text	   data	    bss	    dec	    hex	filename
+   3940	    120	      4	   4064	    fe0	Practica2.elf
+'Finished building: Practica2.siz'
+' '
+16:17:52 **** Incremental Build of configuration Debug for project Practica2 ****
+cs-make all 
+'Building file: ../main.c'
+'Invoking: ARM Sourcery Windows GCC C Compiler'
+arm-none-eabi-gcc -O0 -Wall -Wa,-adhlns="main.o.lst" -c -fmessage-length=0 -mapcs-frame -MMD -MP -MF"main.d" -MT"main.d" -mcpu=arm7tdmi -g3 -gdwarf-2 -o "main.o" "../main.c"
+'Finished building: ../main.c'
+' '
+'Building target: Practica2.elf'
+'Invoking: ARM Sourcery Windows GCC C Linker'
+arm-none-eabi-gcc -T"D:\EC\P2\Practica2\ld_script.ld" -nostartfiles -Wl,-Map,Practica2.map -mcpu=arm7tdmi -g3 -gdwarf-2 -o "Practica2.elf"  ./D8Led.o ./button.o ./gpio.o ./init.o ./leds.o ./main.o ./utils.o   
+'Finished building target: Practica2.elf'
+' '
+'Invoking: ARM Sourcery Windows GNU Create Flash Image'
+arm-none-eabi-objcopy -O binary Practica2.elf  "Practica2.hex"
+'Finished building: Practica2.hex'
+' '
+'Invoking: ARM Sourcery Windows GNU Create Listing'
+arm-none-eabi-objdump -h -S Practica2.elf > "Practica2.lst"
+'Finished building: Practica2.lst'
+' '
+'Invoking: ARM Sourcery Windows GNU Print Size'
+arm-none-eabi-size  --format=berkeley Practica2.elf
+   text	   data	    bss	    dec	    hex	filename
+   3968	    120	      8	   4096	   1000	Practica2.elf
+'Finished building: Practica2.siz'
+' '
+16:18:10 **** Incremental Build of configuration Debug for project Practica2 ****
+cs-make all 
+'Invoking: ARM Sourcery Windows GNU Print Size'
+arm-none-eabi-size  --format=berkeley Practica2.elf
+   text	   data	    bss	    dec	    hex	filename
+   3968	    120	      8	   4096	   1000	Practica2.elf
+'Finished building: Practica2.siz'
+' '
+16:18:17 **** Incremental Build of configuration Debug for project Practica2 ****
+cs-make all 
+'Invoking: ARM Sourcery Windows GNU Print Size'
+arm-none-eabi-size  --format=berkeley Practica2.elf
+   text	   data	    bss	    dec	    hex	filename
+   3968	    120	      8	   4096	   1000	Practica2.elf
+'Finished building: Practica2.siz'
+' '
+16:22:20 **** Incremental Build of configuration Debug for project Practica2 ****
+cs-make all 
+'Building file: ../main.c'
+'Invoking: ARM Sourcery Windows GCC C Compiler'
+arm-none-eabi-gcc -O0 -Wall -Wa,-adhlns="main.o.lst" -c -fmessage-length=0 -mapcs-frame -MMD -MP -MF"main.d" -MT"main.d" -mcpu=arm7tdmi -g3 -gdwarf-2 -o "main.o" "../main.c"
+'Finished building: ../main.c'
+' '
+'Building target: Practica2.elf'
+'Invoking: ARM Sourcery Windows GCC C Linker'
+arm-none-eabi-gcc -T"D:\EC\P2\Practica2\ld_script.ld" -nostartfiles -Wl,-Map,Practica2.map -mcpu=arm7tdmi -g3 -gdwarf-2 -o "Practica2.elf"  ./D8Led.o ./button.o ./gpio.o ./init.o ./leds.o ./main.o ./utils.o   
+'Finished building target: Practica2.elf'
+' '
+'Invoking: ARM Sourcery Windows GNU Create Flash Image'
+arm-none-eabi-objcopy -O binary Practica2.elf  "Practica2.hex"
+'Finished building: Practica2.hex'
+' '
+'Invoking: ARM Sourcery Windows GNU Create Listing'
+arm-none-eabi-objdump -h -S Practica2.elf > "Practica2.lst"
+'Finished building: Practica2.lst'
+' '
+'Invoking: ARM Sourcery Windows GNU Print Size'
+arm-none-eabi-size  --format=berkeley Practica2.elf
+   text	   data	    bss	    dec	    hex	filename
+   3920	    120	      8	   4048	    fd0	Practica2.elf
+'Finished building: Practica2.siz'
+' '
+16:22:27 **** Incremental Build of configuration Debug for project Practica2 ****
+cs-make all 
+'Invoking: ARM Sourcery Windows GNU Print Size'
+arm-none-eabi-size  --format=berkeley Practica2.elf
+   text	   data	    bss	    dec	    hex	filename
+   3920	    120	      8	   4048	    fd0	Practica2.elf
+'Finished building: Practica2.siz'
+' '
+16:22:37 **** Incremental Build of configuration Debug for project Practica2 ****
+cs-make all 
+'Invoking: ARM Sourcery Windows GNU Print Size'
+arm-none-eabi-size  --format=berkeley Practica2.elf
+   text	   data	    bss	    dec	    hex	filename
+   3920	    120	      8	   4048	    fd0	Practica2.elf
+'Finished building: Practica2.siz'
+' '
+16:22:45 **** Incremental Build of configuration Debug for project Practica2 ****
+cs-make all 
+'Invoking: ARM Sourcery Windows GNU Print Size'
+arm-none-eabi-size  --format=berkeley Practica2.elf
+   text	   data	    bss	    dec	    hex	filename
+   3920	    120	      8	   4048	    fd0	Practica2.elf
+'Finished building: Practica2.siz'
+' '
+16:26:43 **** Incremental Build of configuration Debug for project Practica2 ****
+cs-make all 
+'Building file: ../main.c'
+'Invoking: ARM Sourcery Windows GCC C Compiler'
+arm-none-eabi-gcc -O0 -Wall -Wa,-adhlns="main.o.lst" -c -fmessage-length=0 -mapcs-frame -MMD -MP -MF"main.d" -MT"main.d" -mcpu=arm7tdmi -g3 -gdwarf-2 -o "main.o" "../main.c"
+'Finished building: ../main.c'
+' '
+'Building target: Practica2.elf'
+'Invoking: ARM Sourcery Windows GCC C Linker'
+arm-none-eabi-gcc -T"D:\EC\P2\Practica2\ld_script.ld" -nostartfiles -Wl,-Map,Practica2.map -mcpu=arm7tdmi -g3 -gdwarf-2 -o "Practica2.elf"  ./D8Led.o ./button.o ./gpio.o ./init.o ./leds.o ./main.o ./utils.o   
+'Finished building target: Practica2.elf'
+' '
+'Invoking: ARM Sourcery Windows GNU Create Flash Image'
+arm-none-eabi-objcopy -O binary Practica2.elf  "Practica2.hex"
+'Finished building: Practica2.hex'
+' '
+'Invoking: ARM Sourcery Windows GNU Create Listing'
+arm-none-eabi-objdump -h -S Practica2.elf > "Practica2.lst"
+'Finished building: Practica2.lst'
+' '
+'Invoking: ARM Sourcery Windows GNU Print Size'
+arm-none-eabi-size  --format=berkeley Practica2.elf
+   text	   data	    bss	    dec	    hex	filename
+   3928	    120	      8	   4056	    fd8	Practica2.elf
+'Finished building: Practica2.siz'
+' '
+16:26:57 **** Incremental Build of configuration Debug for project Practica2 ****
+cs-make all 
+'Invoking: ARM Sourcery Windows GNU Print Size'
+arm-none-eabi-size  --format=berkeley Practica2.elf
+   text	   data	    bss	    dec	    hex	filename
+   3928	    120	      8	   4056	    fd8	Practica2.elf
+'Finished building: Practica2.siz'
+' '
+16:27:06 **** Incremental Build of configuration Debug for project Practica2 ****
+cs-make all 
+'Invoking: ARM Sourcery Windows GNU Print Size'
+arm-none-eabi-size  --format=berkeley Practica2.elf
+   text	   data	    bss	    dec	    hex	filename
+   3928	    120	      8	   4056	    fd8	Practica2.elf
+'Finished building: Practica2.siz'
+' '
+10:29:02 **** Build of configuration Debug for project Practica2 ****
+cs-make all 
+'Invoking: ARM Sourcery Windows GNU Print Size'
+arm-none-eabi-size  --format=berkeley Practica2.elf
+   text	   data	    bss	    dec	    hex	filename
+   3928	    120	      8	   4056	    fd8	Practica2.elf
+'Finished building: Practica2.siz'
+' '
+10:29:20 **** Incremental Build of configuration Debug for project Practica2 ****
+cs-make all 
+'Invoking: ARM Sourcery Windows GNU Print Size'
+arm-none-eabi-size  --format=berkeley Practica2.elf
+   text	   data	    bss	    dec	    hex	filename
+   3928	    120	      8	   4056	    fd8	Practica2.elf
+'Finished building: Practica2.siz'
+' '
+11:08:34 **** Incremental Build of configuration Debug for project Practica2 ****
+cs-make all 
+'Invoking: ARM Sourcery Windows GNU Print Size'
+arm-none-eabi-size  --format=berkeley Practica2.elf
+   text	   data	    bss	    dec	    hex	filename
+   3928	    120	      8	   4056	    fd8	Practica2.elf
+'Finished building: Practica2.siz'
+' '
+11:08:46 **** Incremental Build of configuration Debug for project Practica2 ****
+cs-make all 
+'Invoking: ARM Sourcery Windows GNU Print Size'
+arm-none-eabi-size  --format=berkeley Practica2.elf
+   text	   data	    bss	    dec	    hex	filename
+   3928	    120	      8	   4056	    fd8	Practica2.elf
+'Finished building: Practica2.siz'
+' '
+11:22:54 **** Incremental Build of configuration Debug for project Practica2 ****
+cs-make all 
+'Building file: ../main.c'
+'Invoking: ARM Sourcery Windows GCC C Compiler'
+arm-none-eabi-gcc -O0 -Wall -Wa,-adhlns="main.o.lst" -c -fmessage-length=0 -mapcs-frame -MMD -MP -MF"main.d" -MT"main.d" -mcpu=arm7tdmi -g3 -gdwarf-2 -o "main.o" "../main.c"
+../main.c: In function 'setup':
+../main.c:44:2: warning: implicit declaration of function 'D8Led_digits'
+../main.c: At top level:
+../main.c:18:22: warning: 'RL' defined but not used
+'Finished building: ../main.c'
+' '
+'Building target: Practica2.elf'
+'Invoking: ARM Sourcery Windows GCC C Linker'
+arm-none-eabi-gcc -T"D:\EC\P2\Practica2\ld_script.ld" -nostartfiles -Wl,-Map,Practica2.map -mcpu=arm7tdmi -g3 -gdwarf-2 -o "Practica2.elf"  ./D8Led.o ./button.o ./gpio.o ./init.o ./leds.o ./main.o ./utils.o   
+d:/ec/eclipsearm/sourcery-g++-lite-arm-2011.03/bin/../lib/gcc/arm-none-eabi/4.5.2/../../../../arm-none-eabi/bin/ld.exe: cannot open linker script file D:\EC\P2\Practica2\ld_script.ld: Invalid argument
+collect2: ld returned 1 exit status
+cs-make: *** [Practica2.elf] Error 1
+11:23:33 **** Incremental Build of configuration Debug for project Practica2 ****
+cs-make all 
+'Building file: ../D8Led.c'
+'Invoking: ARM Sourcery Windows GCC C Compiler'
+arm-none-eabi-gcc -O0 -Wall -Wa,-adhlns="D8Led.o.lst" -c -fmessage-length=0 -mapcs-frame -MMD -MP -MF"D8Led.d" -MT"D8Led.d" -mcpu=arm7tdmi -g3 -gdwarf-2 -o "D8Led.o" "../D8Led.c"
+'Finished building: ../D8Led.c'
+' '
+'Building file: ../button.c'
+'Invoking: ARM Sourcery Windows GCC C Compiler'
+arm-none-eabi-gcc -O0 -Wall -Wa,-adhlns="button.o.lst" -c -fmessage-length=0 -mapcs-frame -MMD -MP -MF"button.d" -MT"button.d" -mcpu=arm7tdmi -g3 -gdwarf-2 -o "button.o" "../button.c"
+'Finished building: ../button.c'
+' '
+'Building file: ../gpio.c'
+'Invoking: ARM Sourcery Windows GCC C Compiler'
+arm-none-eabi-gcc -O0 -Wall -Wa,-adhlns="gpio.o.lst" -c -fmessage-length=0 -mapcs-frame -MMD -MP -MF"gpio.d" -MT"gpio.d" -mcpu=arm7tdmi -g3 -gdwarf-2 -o "gpio.o" "../gpio.c"
+'Finished building: ../gpio.c'
+' '
+'Building file: ../init.S'
+'Invoking: ARM Sourcery Windows GCC Assembler'
+arm-none-eabi-gcc -x assembler-with-cpp -Wall -Wa,-adhlns="init.o.lst" -c -fmessage-length=0 -MMD -MP -MF"init.d" -MT"init.d" -mcpu=arm7tdmi -g3 -gdwarf-2 -o "init.o" "../init.S"
+'Finished building: ../init.S'
+' '
+'Building file: ../leds.c'
+'Invoking: ARM Sourcery Windows GCC C Compiler'
+arm-none-eabi-gcc -O0 -Wall -Wa,-adhlns="leds.o.lst" -c -fmessage-length=0 -mapcs-frame -MMD -MP -MF"leds.d" -MT"leds.d" -mcpu=arm7tdmi -g3 -gdwarf-2 -o "leds.o" "../leds.c"
+'Finished building: ../leds.c'
+' '
+'Building file: ../main.c'
+'Invoking: ARM Sourcery Windows GCC C Compiler'
+arm-none-eabi-gcc -O0 -Wall -Wa,-adhlns="main.o.lst" -c -fmessage-length=0 -mapcs-frame -MMD -MP -MF"main.d" -MT"main.d" -mcpu=arm7tdmi -g3 -gdwarf-2 -o "main.o" "../main.c"
+../main.c: In function 'setup':
+../main.c:44:2: warning: implicit declaration of function 'D8Led_digits'
+../main.c: At top level:
+../main.c:18:22: warning: 'RL' defined but not used
+'Finished building: ../main.c'
+' '
+'Building file: ../utils.c'
+'Invoking: ARM Sourcery Windows GCC C Compiler'
+arm-none-eabi-gcc -O0 -Wall -Wa,-adhlns="utils.o.lst" -c -fmessage-length=0 -mapcs-frame -MMD -MP -MF"utils.d" -MT"utils.d" -mcpu=arm7tdmi -g3 -gdwarf-2 -o "utils.o" "../utils.c"
+'Finished building: ../utils.c'
+' '
+'Building target: Practica2.elf'
+'Invoking: ARM Sourcery Windows GCC C Linker'
+arm-none-eabi-gcc -T"D:\EC\P2\Practica2\ld_script.ld" -nostartfiles -Wl,-Map,Practica2.map -mcpu=arm7tdmi -g3 -gdwarf-2 -o "Practica2.elf"  ./D8Led.o ./button.o ./gpio.o ./init.o ./leds.o ./main.o ./utils.o   
+d:/ec/eclipsearm/sourcery-g++-lite-arm-2011.03/bin/../lib/gcc/arm-none-eabi/4.5.2/../../../../arm-none-eabi/bin/ld.exe: cannot open linker script file D:\EC\P2\Practica2\ld_script.ld: Invalid argument
+collect2: ld returned 1 exit status
+cs-make: *** [Practica2.elf] Error 1
+11:24:45 **** Incremental Build of configuration Debug for project Practica2 ****
+cs-make all 
+'Building target: Practica2.elf'
+'Invoking: ARM Sourcery Windows GCC C Linker'
+arm-none-eabi-gcc -T"D:\EC\PracticasEC\P2\Practica2\ld_script.ld" -nostartfiles -Wl,-Map,Practica2.map -mcpu=arm7tdmi -g3 -gdwarf-2 -o "Practica2.elf"  ./D8Led.o ./button.o ./gpio.o ./init.o ./leds.o ./main.o ./utils.o   
+./main.o: In function `setup':
+D:\EC\PracticasEC\P2\Practica2\Debug/../main.c:44: undefined reference to `D8Led_digits'
+./main.o: In function `loop':
+D:\EC\PracticasEC\P2\Practica2\Debug/../main.c:57: undefined reference to `D8Led_digits'
+D:\EC\PracticasEC\P2\Practica2\Debug/../main.c:68: undefined reference to `D8Led_digits'
+collect2: ld returned 1 exit status
+cs-make: *** [Practica2.elf] Error 1
+11:25:31 **** Incremental Build of configuration Debug for project Practica2 ****
+cs-make all 
+'Building file: ../main.c'
+'Invoking: ARM Sourcery Windows GCC C Compiler'
+arm-none-eabi-gcc -O0 -Wall -Wa,-adhlns="main.o.lst" -c -fmessage-length=0 -mapcs-frame -MMD -MP -MF"main.d" -MT"main.d" -mcpu=arm7tdmi -g3 -gdwarf-2 -o "main.o" "../main.c"
+../main.c:18:22: warning: 'RL' defined but not used
+'Finished building: ../main.c'
+' '
+'Building target: Practica2.elf'
+'Invoking: ARM Sourcery Windows GCC C Linker'
+arm-none-eabi-gcc -T"D:\EC\PracticasEC\P2\Practica2\ld_script.ld" -nostartfiles -Wl,-Map,Practica2.map -mcpu=arm7tdmi -g3 -gdwarf-2 -o "Practica2.elf"  ./D8Led.o ./button.o ./gpio.o ./init.o ./leds.o ./main.o ./utils.o   
+'Finished building target: Practica2.elf'
+' '
+'Invoking: ARM Sourcery Windows GNU Create Flash Image'
+arm-none-eabi-objcopy -O binary Practica2.elf  "Practica2.hex"
+'Finished building: Practica2.hex'
+' '
+'Invoking: ARM Sourcery Windows GNU Create Listing'
+arm-none-eabi-objdump -h -S Practica2.elf > "Practica2.lst"
+'Finished building: Practica2.lst'
+' '
+'Invoking: ARM Sourcery Windows GNU Print Size'
+arm-none-eabi-size  --format=berkeley Practica2.elf
+   text	   data	    bss	    dec	    hex	filename
+   3736	    120	      8	   3864	    f18	Practica2.elf
+'Finished building: Practica2.siz'
+' '
+11:25:38 **** Incremental Build of configuration Debug for project Practica2 ****
+cs-make all 
+'Invoking: ARM Sourcery Windows GNU Print Size'
+arm-none-eabi-size  --format=berkeley Practica2.elf
+   text	   data	    bss	    dec	    hex	filename
+   3736	    120	      8	   3864	    f18	Practica2.elf
+'Finished building: Practica2.siz'
+' '
+11:25:45 **** Incremental Build of configuration Debug for project Practica2 ****
+cs-make all 
+'Invoking: ARM Sourcery Windows GNU Print Size'
+arm-none-eabi-size  --format=berkeley Practica2.elf
+   text	   data	    bss	    dec	    hex	filename
+   3736	    120	      8	   3864	    f18	Practica2.elf
+'Finished building: Practica2.siz'
+' '
+11:27:06 **** Incremental Build of configuration Debug for project Practica2 ****
+cs-make all 
+'Building file: ../main.c'
+'Invoking: ARM Sourcery Windows GCC C Compiler'
+arm-none-eabi-gcc -O0 -Wall -Wa,-adhlns="main.o.lst" -c -fmessage-length=0 -mapcs-frame -MMD -MP -MF"main.d" -MT"main.d" -mcpu=arm7tdmi -g3 -gdwarf-2 -o "main.o" "../main.c"
+../main.c:18:22: warning: 'RL' defined but not used
+'Finished building: ../main.c'
+' '
+'Building target: Practica2.elf'
+'Invoking: ARM Sourcery Windows GCC C Linker'
+arm-none-eabi-gcc -T"D:\EC\PracticasEC\P2\Practica2\ld_script.ld" -nostartfiles -Wl,-Map,Practica2.map -mcpu=arm7tdmi -g3 -gdwarf-2 -o "Practica2.elf"  ./D8Led.o ./button.o ./gpio.o ./init.o ./leds.o ./main.o ./utils.o   
+'Finished building target: Practica2.elf'
+' '
+'Invoking: ARM Sourcery Windows GNU Create Flash Image'
+arm-none-eabi-objcopy -O binary Practica2.elf  "Practica2.hex"
+'Finished building: Practica2.hex'
+' '
+'Invoking: ARM Sourcery Windows GNU Create Listing'
+arm-none-eabi-objdump -h -S Practica2.elf > "Practica2.lst"
+'Finished building: Practica2.lst'
+' '
+'Invoking: ARM Sourcery Windows GNU Print Size'
+arm-none-eabi-size  --format=berkeley Practica2.elf
+   text	   data	    bss	    dec	    hex	filename
+   3728	    120	      8	   3856	    f10	Practica2.elf
+'Finished building: Practica2.siz'
+' '
+11:27:18 **** Incremental Build of configuration Debug for project Practica2 ****
+cs-make all 
+'Invoking: ARM Sourcery Windows GNU Print Size'
+arm-none-eabi-size  --format=berkeley Practica2.elf
+   text	   data	    bss	    dec	    hex	filename
+   3728	    120	      8	   3856	    f10	Practica2.elf
+'Finished building: Practica2.siz'
+' '
+11:27:24 **** Incremental Build of configuration Debug for project Practica2 ****
+cs-make all 
+'Invoking: ARM Sourcery Windows GNU Print Size'
+arm-none-eabi-size  --format=berkeley Practica2.elf
+   text	   data	    bss	    dec	    hex	filename
+   3728	    120	      8	   3856	    f10	Practica2.elf
+'Finished building: Practica2.siz'
+' '
+11:28:40 **** Incremental Build of configuration Debug for project Practica2 ****
+cs-make all 
+'Building file: ../main.c'
+'Invoking: ARM Sourcery Windows GCC C Compiler'
+arm-none-eabi-gcc -O0 -Wall -Wa,-adhlns="main.o.lst" -c -fmessage-length=0 -mapcs-frame -MMD -MP -MF"main.d" -MT"main.d" -mcpu=arm7tdmi -g3 -gdwarf-2 -o "main.o" "../main.c"
+../main.c:18:22: warning: 'RL' defined but not used
+'Finished building: ../main.c'
+' '
+'Building target: Practica2.elf'
+'Invoking: ARM Sourcery Windows GCC C Linker'
+arm-none-eabi-gcc -T"D:\EC\PracticasEC\P2\Practica2\ld_script.ld" -nostartfiles -Wl,-Map,Practica2.map -mcpu=arm7tdmi -g3 -gdwarf-2 -o "Practica2.elf"  ./D8Led.o ./button.o ./gpio.o ./init.o ./leds.o ./main.o ./utils.o   
+'Finished building target: Practica2.elf'
+' '
+'Invoking: ARM Sourcery Windows GNU Create Flash Image'
+arm-none-eabi-objcopy -O binary Practica2.elf  "Practica2.hex"
+'Finished building: Practica2.hex'
+' '
+'Invoking: ARM Sourcery Windows GNU Create Listing'
+arm-none-eabi-objdump -h -S Practica2.elf > "Practica2.lst"
+'Finished building: Practica2.lst'
+' '
+'Invoking: ARM Sourcery Windows GNU Print Size'
+arm-none-eabi-size  --format=berkeley Practica2.elf
+   text	   data	    bss	    dec	    hex	filename
+   3744	    120	      8	   3872	    f20	Practica2.elf
+'Finished building: Practica2.siz'
+' '
+11:28:50 **** Incremental Build of configuration Debug for project Practica2 ****
+cs-make all 
+'Invoking: ARM Sourcery Windows GNU Print Size'
+arm-none-eabi-size  --format=berkeley Practica2.elf
+   text	   data	    bss	    dec	    hex	filename
+   3744	    120	      8	   3872	    f20	Practica2.elf
+'Finished building: Practica2.siz'
+' '
+11:28:55 **** Incremental Build of configuration Debug for project Practica2 ****
+cs-make all 
+'Invoking: ARM Sourcery Windows GNU Print Size'
+arm-none-eabi-size  --format=berkeley Practica2.elf
+   text	   data	    bss	    dec	    hex	filename
+   3744	    120	      8	   3872	    f20	Practica2.elf
+'Finished building: Practica2.siz'
+' '
+11:30:37 **** Incremental Build of configuration Debug for project Practica2 ****
+cs-make all 
+'Building file: ../main.c'
+'Invoking: ARM Sourcery Windows GCC C Compiler'
+arm-none-eabi-gcc -O0 -Wall -Wa,-adhlns="main.o.lst" -c -fmessage-length=0 -mapcs-frame -MMD -MP -MF"main.d" -MT"main.d" -mcpu=arm7tdmi -g3 -gdwarf-2 -o "main.o" "../main.c"
+../main.c:18:22: warning: 'RL' defined but not used
+'Finished building: ../main.c'
+' '
+'Building target: Practica2.elf'
+'Invoking: ARM Sourcery Windows GCC C Linker'
+arm-none-eabi-gcc -T"D:\EC\PracticasEC\P2\Practica2\ld_script.ld" -nostartfiles -Wl,-Map,Practica2.map -mcpu=arm7tdmi -g3 -gdwarf-2 -o "Practica2.elf"  ./D8Led.o ./button.o ./gpio.o ./init.o ./leds.o ./main.o ./utils.o   
+'Finished building target: Practica2.elf'
+' '
+'Invoking: ARM Sourcery Windows GNU Create Flash Image'
+arm-none-eabi-objcopy -O binary Practica2.elf  "Practica2.hex"
+'Finished building: Practica2.hex'
+' '
+'Invoking: ARM Sourcery Windows GNU Create Listing'
+arm-none-eabi-objdump -h -S Practica2.elf > "Practica2.lst"
+'Finished building: Practica2.lst'
+' '
+'Invoking: ARM Sourcery Windows GNU Print Size'
+arm-none-eabi-size  --format=berkeley Practica2.elf
+   text	   data	    bss	    dec	    hex	filename
+   3756	    120	      8	   3884	    f2c	Practica2.elf
+'Finished building: Practica2.siz'
+' '
+11:30:50 **** Incremental Build of configuration Debug for project Practica2 ****
+cs-make all 
+'Invoking: ARM Sourcery Windows GNU Print Size'
+arm-none-eabi-size  --format=berkeley Practica2.elf
+   text	   data	    bss	    dec	    hex	filename
+   3756	    120	      8	   3884	    f2c	Practica2.elf
+'Finished building: Practica2.siz'
+' '
+11:31:17 **** Incremental Build of configuration Debug for project Practica2 ****
+cs-make all 
+'Invoking: ARM Sourcery Windows GNU Print Size'
+arm-none-eabi-size  --format=berkeley Practica2.elf
+   text	   data	    bss	    dec	    hex	filename
+   3756	    120	      8	   3884	    f2c	Practica2.elf
+'Finished building: Practica2.siz'
+' '
+11:31:23 **** Incremental Build of configuration Debug for project Practica2 ****
+cs-make all 
+'Invoking: ARM Sourcery Windows GNU Print Size'
+arm-none-eabi-size  --format=berkeley Practica2.elf
+   text	   data	    bss	    dec	    hex	filename
+   3756	    120	      8	   3884	    f2c	Practica2.elf
+'Finished building: Practica2.siz'
+' '
+11:35:57 **** Incremental Build of configuration Debug for project Practica2 ****
+cs-make all 
+'Building file: ../main.c'
+'Invoking: ARM Sourcery Windows GCC C Compiler'
+arm-none-eabi-gcc -O0 -Wall -Wa,-adhlns="main.o.lst" -c -fmessage-length=0 -mapcs-frame -MMD -MP -MF"main.d" -MT"main.d" -mcpu=arm7tdmi -g3 -gdwarf-2 -o "main.o" "../main.c"
+../main.c: In function 'loop':
+../main.c:107:5: warning: 'main' is normally a non-static function
+../main.c:114:1: error: expected declaration or statement at end of input
+../main.c:114:1: warning: control reaches end of non-void function
+cs-make: *** [main.o] Error 1
+11:36:10 **** Incremental Build of configuration Debug for project Practica2 ****
+cs-make all 
+'Building file: ../main.c'
+'Invoking: ARM Sourcery Windows GCC C Compiler'
+arm-none-eabi-gcc -O0 -Wall -Wa,-adhlns="main.o.lst" -c -fmessage-length=0 -mapcs-frame -MMD -MP -MF"main.d" -MT"main.d" -mcpu=arm7tdmi -g3 -gdwarf-2 -o "main.o" "../main.c"
+'Finished building: ../main.c'
+' '
+'Building target: Practica2.elf'
+'Invoking: ARM Sourcery Windows GCC C Linker'
+arm-none-eabi-gcc -T"D:\EC\PracticasEC\P2\Practica2\ld_script.ld" -nostartfiles -Wl,-Map,Practica2.map -mcpu=arm7tdmi -g3 -gdwarf-2 -o "Practica2.elf"  ./D8Led.o ./button.o ./gpio.o ./init.o ./leds.o ./main.o ./utils.o   
+'Finished building target: Practica2.elf'
+' '
+'Invoking: ARM Sourcery Windows GNU Create Flash Image'
+arm-none-eabi-objcopy -O binary Practica2.elf  "Practica2.hex"
+'Finished building: Practica2.hex'
+' '
+'Invoking: ARM Sourcery Windows GNU Create Listing'
+arm-none-eabi-objdump -h -S Practica2.elf > "Practica2.lst"
+'Finished building: Practica2.lst'
+' '
+'Invoking: ARM Sourcery Windows GNU Print Size'
+arm-none-eabi-size  --format=berkeley Practica2.elf
+   text	   data	    bss	    dec	    hex	filename
+   3724	    120	      4	   3848	    f08	Practica2.elf
+'Finished building: Practica2.siz'
+' '
+11:36:25 **** Incremental Build of configuration Debug for project Practica2 ****
+cs-make all 
+'Invoking: ARM Sourcery Windows GNU Print Size'
+arm-none-eabi-size  --format=berkeley Practica2.elf
+   text	   data	    bss	    dec	    hex	filename
+   3724	    120	      4	   3848	    f08	Practica2.elf
+'Finished building: Practica2.siz'
+' '
+11:36:34 **** Incremental Build of configuration Debug for project Practica2 ****
+cs-make all 
+'Invoking: ARM Sourcery Windows GNU Print Size'
+arm-none-eabi-size  --format=berkeley Practica2.elf
+   text	   data	    bss	    dec	    hex	filename
+   3724	    120	      4	   3848	    f08	Practica2.elf
+'Finished building: Practica2.siz'
+' '
+11:36:40 **** Incremental Build of configuration Debug for project Practica2 ****
+cs-make all 
+'Invoking: ARM Sourcery Windows GNU Print Size'
+arm-none-eabi-size  --format=berkeley Practica2.elf
+   text	   data	    bss	    dec	    hex	filename
+   3724	    120	      4	   3848	    f08	Practica2.elf
+'Finished building: Practica2.siz'
+' '

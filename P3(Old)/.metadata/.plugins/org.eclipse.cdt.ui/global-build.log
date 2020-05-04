@@ -1,0 +1,895 @@
+12:32:56 **** Incremental Build of configuration Debug for project p33333333333333 ****
+cs-make all 
+'Building file: ../main.c'
+'Invoking: ARM Sourcery Windows GCC C Compiler'
+arm-none-eabi-gcc -O0 -Wall -Wa,-adhlns="main.o.lst" -c -fmessage-length=0 -mapcs-frame -MMD -MP -MF"main.d" -MT"main.d" -mcpu=arm7tdmi -g3 -gdwarf-2 -o "main.o" "../main.c"
+'Finished building: ../main.c'
+' '
+'Building target: p33333333333333.elf'
+'Invoking: ARM Sourcery Windows GCC C Linker'
+arm-none-eabi-gcc -T"D:\EC\PracticasEC\P3(Old)\p33333333333333\ld_script.ld" -nostartfiles -Wl,-Map,p33333333333333.map -mcpu=arm7tdmi -g3 -gdwarf-2 -o "p33333333333333.elf"  ./D8Led.o ./button.o ./gpio.o ./init.o ./intcontroller.o ./keyboard.o ./leds.o ./main.o ./timer.o ./utils.o   
+'Finished building target: p33333333333333.elf'
+' '
+'Invoking: ARM Sourcery Windows GNU Create Flash Image'
+arm-none-eabi-objcopy -O binary p33333333333333.elf  "p33333333333333.hex"
+'Finished building: p33333333333333.hex'
+' '
+'Invoking: ARM Sourcery Windows GNU Create Listing'
+arm-none-eabi-objdump -h -S p33333333333333.elf > "p33333333333333.lst"
+'Finished building: p33333333333333.lst'
+' '
+'Invoking: ARM Sourcery Windows GNU Print Size'
+arm-none-eabi-size  --format=berkeley p33333333333333.elf
+   text	   data	    bss	    dec	    hex	filename
+   8128	    200	      4	   8332	   208c	p33333333333333.elf
+'Finished building: p33333333333333.siz'
+' '
+12:33:03 **** Incremental Build of configuration Debug for project p33333333333333 ****
+cs-make all 
+'Invoking: ARM Sourcery Windows GNU Print Size'
+arm-none-eabi-size  --format=berkeley p33333333333333.elf
+   text	   data	    bss	    dec	    hex	filename
+   8128	    200	      4	   8332	   208c	p33333333333333.elf
+'Finished building: p33333333333333.siz'
+' '
+12:34:07 **** Incremental Build of configuration Debug for project p33333333333333 ****
+cs-make all 
+'Invoking: ARM Sourcery Windows GNU Print Size'
+arm-none-eabi-size  --format=berkeley p33333333333333.elf
+   text	   data	    bss	    dec	    hex	filename
+   8128	    200	      4	   8332	   208c	p33333333333333.elf
+'Finished building: p33333333333333.siz'
+' '
+12:35:12 **** Incremental Build of configuration Debug for project p33333333333333 ****
+cs-make all 
+'Invoking: ARM Sourcery Windows GNU Print Size'
+arm-none-eabi-size  --format=berkeley p33333333333333.elf
+   text	   data	    bss	    dec	    hex	filename
+   8128	    200	      4	   8332	   208c	p33333333333333.elf
+'Finished building: p33333333333333.siz'
+' '
+10:55:03 **** Incremental Build of configuration Debug for project p33333333333333 ****
+cs-make all 
+'Invoking: ARM Sourcery Windows GNU Print Size'
+arm-none-eabi-size  --format=berkeley p33333333333333.elf
+   text	   data	    bss	    dec	    hex	filename
+   8128	    200	      4	   8332	   208c	p33333333333333.elf
+'Finished building: p33333333333333.siz'
+' '
+10:55:16 **** Incremental Build of configuration Debug for project p33333333333333 ****
+cs-make all 
+'Invoking: ARM Sourcery Windows GNU Print Size'
+arm-none-eabi-size  --format=berkeley p33333333333333.elf
+   text	   data	    bss	    dec	    hex	filename
+   8128	    200	      4	   8332	   208c	p33333333333333.elf
+'Finished building: p33333333333333.siz'
+' '
+10:56:04 **** Incremental Build of configuration Debug for project p33333333333333 ****
+cs-make all 
+'Building file: ../.metadata/.plugins/org.eclipse.cdt.make.core/specs.c'
+'Invoking: ARM Sourcery Windows GCC C Compiler'
+arm-none-eabi-gcc -O0 -Wall -Wa,-adhlns=".metadata/.plugins/org.eclipse.cdt.make.core/specs.o.lst" -c -fmessage-length=0 -mapcs-frame -MMD -MP -MF".metadata/.plugins/org.eclipse.cdt.make.core/specs.d" -MT".metadata/.plugins/org.eclipse.cdt.make.core/specs.d" -mcpu=arm7tdmi -g3 -gdwarf-2 -o ".metadata/.plugins/org.eclipse.cdt.make.core/specs.o" "../.metadata/.plugins/org.eclipse.cdt.make.core/specs.c"
+'Finished building: ../.metadata/.plugins/org.eclipse.cdt.make.core/specs.c'
+' '
+'Building file: ../main.c'
+'Invoking: ARM Sourcery Windows GCC C Compiler'
+arm-none-eabi-gcc -O0 -Wall -Wa,-adhlns="main.o.lst" -c -fmessage-length=0 -mapcs-frame -MMD -MP -MF"main.d" -MT"main.d" -mcpu=arm7tdmi -g3 -gdwarf-2 -o "main.o" "../main.c"
+'Finished building: ../main.c'
+' '
+'Building target: p33333333333333.elf'
+'Invoking: ARM Sourcery Windows GCC C Linker'
+arm-none-eabi-gcc -T"D:\EC\PracticasEC\P3(Old)\p33333333333333\ld_script.ld" -nostartfiles -Wl,-Map,p33333333333333.map -mcpu=arm7tdmi -g3 -gdwarf-2 -o "p33333333333333.elf"  ./.metadata/.plugins/org.eclipse.cdt.make.core/specs.o  ./D8Led.o ./button.o ./gpio.o ./init.o ./intcontroller.o ./keyboard.o ./leds.o ./main.o ./timer.o ./utils.o   
+'Finished building target: p33333333333333.elf'
+' '
+'Invoking: ARM Sourcery Windows GNU Create Flash Image'
+arm-none-eabi-objcopy -O binary p33333333333333.elf  "p33333333333333.hex"
+'Finished building: p33333333333333.hex'
+' '
+'Invoking: ARM Sourcery Windows GNU Create Listing'
+arm-none-eabi-objdump -h -S p33333333333333.elf > "p33333333333333.lst"
+'Finished building: p33333333333333.lst'
+' '
+'Invoking: ARM Sourcery Windows GNU Print Size'
+arm-none-eabi-size  --format=berkeley p33333333333333.elf
+   text	   data	    bss	    dec	    hex	filename
+   8152	    200	      4	   8356	   20a4	p33333333333333.elf
+'Finished building: p33333333333333.siz'
+' '
+10:56:10 **** Incremental Build of configuration Debug for project p33333333333333 ****
+cs-make all 
+'Invoking: ARM Sourcery Windows GNU Print Size'
+arm-none-eabi-size  --format=berkeley p33333333333333.elf
+   text	   data	    bss	    dec	    hex	filename
+   8152	    200	      4	   8356	   20a4	p33333333333333.elf
+'Finished building: p33333333333333.siz'
+' '
+11:07:24 **** Incremental Build of configuration Debug for project p33333333333333 ****
+cs-make all 
+'Invoking: ARM Sourcery Windows GNU Print Size'
+arm-none-eabi-size  --format=berkeley p33333333333333.elf
+   text	   data	    bss	    dec	    hex	filename
+   8152	    200	      4	   8356	   20a4	p33333333333333.elf
+'Finished building: p33333333333333.siz'
+' '
+11:07:34 **** Incremental Build of configuration Debug for project p33333333333333 ****
+cs-make all 
+'Invoking: ARM Sourcery Windows GNU Print Size'
+arm-none-eabi-size  --format=berkeley p33333333333333.elf
+   text	   data	    bss	    dec	    hex	filename
+   8152	    200	      4	   8356	   20a4	p33333333333333.elf
+'Finished building: p33333333333333.siz'
+' '
+11:29:54 **** Incremental Build of configuration Debug for project p33333333333333 ****
+cs-make all 
+'Building file: ../main.c'
+'Invoking: ARM Sourcery Windows GCC C Compiler'
+arm-none-eabi-gcc -O0 -Wall -Wa,-adhlns="main.o.lst" -c -fmessage-length=0 -mapcs-frame -MMD -MP -MF"main.d" -MT"main.d" -mcpu=arm7tdmi -g3 -gdwarf-2 -o "main.o" "../main.c"
+'Finished building: ../main.c'
+' '
+'Building target: p33333333333333.elf'
+'Invoking: ARM Sourcery Windows GCC C Linker'
+arm-none-eabi-gcc -T"D:\EC\PracticasEC\P3(Old)\p33333333333333\ld_script.ld" -nostartfiles -Wl,-Map,p33333333333333.map -mcpu=arm7tdmi -g3 -gdwarf-2 -o "p33333333333333.elf"  ./.metadata/.plugins/org.eclipse.cdt.make.core/specs.o  ./D8Led.o ./button.o ./gpio.o ./init.o ./intcontroller.o ./keyboard.o ./leds.o ./main.o ./timer.o ./utils.o   
+'Finished building target: p33333333333333.elf'
+' '
+'Invoking: ARM Sourcery Windows GNU Create Flash Image'
+arm-none-eabi-objcopy -O binary p33333333333333.elf  "p33333333333333.hex"
+'Finished building: p33333333333333.hex'
+' '
+'Invoking: ARM Sourcery Windows GNU Create Listing'
+arm-none-eabi-objdump -h -S p33333333333333.elf > "p33333333333333.lst"
+'Finished building: p33333333333333.lst'
+' '
+'Invoking: ARM Sourcery Windows GNU Print Size'
+arm-none-eabi-size  --format=berkeley p33333333333333.elf
+   text	   data	    bss	    dec	    hex	filename
+   8312	    200	      8	   8520	   2148	p33333333333333.elf
+'Finished building: p33333333333333.siz'
+' '
+11:30:00 **** Incremental Build of configuration Debug for project p33333333333333 ****
+cs-make all 
+'Invoking: ARM Sourcery Windows GNU Print Size'
+arm-none-eabi-size  --format=berkeley p33333333333333.elf
+   text	   data	    bss	    dec	    hex	filename
+   8312	    200	      8	   8520	   2148	p33333333333333.elf
+'Finished building: p33333333333333.siz'
+' '
+11:39:34 **** Incremental Build of configuration Debug for project p33333333333333 ****
+cs-make all 
+'Building file: ../main.c'
+'Invoking: ARM Sourcery Windows GCC C Compiler'
+arm-none-eabi-gcc -O0 -Wall -Wa,-adhlns="main.o.lst" -c -fmessage-length=0 -mapcs-frame -MMD -MP -MF"main.d" -MT"main.d" -mcpu=arm7tdmi -g3 -gdwarf-2 -o "main.o" "../main.c"
+'Finished building: ../main.c'
+' '
+'Building target: p33333333333333.elf'
+'Invoking: ARM Sourcery Windows GCC C Linker'
+arm-none-eabi-gcc -T"D:\EC\PracticasEC\P3(Old)\p33333333333333\ld_script.ld" -nostartfiles -Wl,-Map,p33333333333333.map -mcpu=arm7tdmi -g3 -gdwarf-2 -o "p33333333333333.elf"  ./.metadata/.plugins/org.eclipse.cdt.make.core/specs.o  ./D8Led.o ./button.o ./gpio.o ./init.o ./intcontroller.o ./keyboard.o ./leds.o ./main.o ./timer.o ./utils.o   
+'Finished building target: p33333333333333.elf'
+' '
+'Invoking: ARM Sourcery Windows GNU Create Flash Image'
+arm-none-eabi-objcopy -O binary p33333333333333.elf  "p33333333333333.hex"
+'Finished building: p33333333333333.hex'
+' '
+'Invoking: ARM Sourcery Windows GNU Create Listing'
+arm-none-eabi-objdump -h -S p33333333333333.elf > "p33333333333333.lst"
+'Finished building: p33333333333333.lst'
+' '
+'Invoking: ARM Sourcery Windows GNU Print Size'
+arm-none-eabi-size  --format=berkeley p33333333333333.elf
+   text	   data	    bss	    dec	    hex	filename
+   8408	    200	     16	   8624	   21b0	p33333333333333.elf
+'Finished building: p33333333333333.siz'
+' '
+11:39:44 **** Incremental Build of configuration Debug for project p33333333333333 ****
+cs-make all 
+'Invoking: ARM Sourcery Windows GNU Print Size'
+arm-none-eabi-size  --format=berkeley p33333333333333.elf
+   text	   data	    bss	    dec	    hex	filename
+   8408	    200	     16	   8624	   21b0	p33333333333333.elf
+'Finished building: p33333333333333.siz'
+' '
+11:42:12 **** Incremental Build of configuration Debug for project p33333333333333 ****
+cs-make all 
+'Building file: ../main.c'
+'Invoking: ARM Sourcery Windows GCC C Compiler'
+arm-none-eabi-gcc -O0 -Wall -Wa,-adhlns="main.o.lst" -c -fmessage-length=0 -mapcs-frame -MMD -MP -MF"main.d" -MT"main.d" -mcpu=arm7tdmi -g3 -gdwarf-2 -o "main.o" "../main.c"
+'Finished building: ../main.c'
+' '
+'Building target: p33333333333333.elf'
+'Invoking: ARM Sourcery Windows GCC C Linker'
+arm-none-eabi-gcc -T"D:\EC\PracticasEC\P3(Old)\p33333333333333\ld_script.ld" -nostartfiles -Wl,-Map,p33333333333333.map -mcpu=arm7tdmi -g3 -gdwarf-2 -o "p33333333333333.elf"  ./.metadata/.plugins/org.eclipse.cdt.make.core/specs.o  ./D8Led.o ./button.o ./gpio.o ./init.o ./intcontroller.o ./keyboard.o ./leds.o ./main.o ./timer.o ./utils.o   
+'Finished building target: p33333333333333.elf'
+' '
+'Invoking: ARM Sourcery Windows GNU Create Flash Image'
+arm-none-eabi-objcopy -O binary p33333333333333.elf  "p33333333333333.hex"
+'Finished building: p33333333333333.hex'
+' '
+'Invoking: ARM Sourcery Windows GNU Create Listing'
+arm-none-eabi-objdump -h -S p33333333333333.elf > "p33333333333333.lst"
+'Finished building: p33333333333333.lst'
+' '
+'Invoking: ARM Sourcery Windows GNU Print Size'
+arm-none-eabi-size  --format=berkeley p33333333333333.elf
+   text	   data	    bss	    dec	    hex	filename
+   8384	    200	     16	   8600	   2198	p33333333333333.elf
+'Finished building: p33333333333333.siz'
+' '
+11:42:17 **** Incremental Build of configuration Debug for project p33333333333333 ****
+cs-make all 
+'Invoking: ARM Sourcery Windows GNU Print Size'
+arm-none-eabi-size  --format=berkeley p33333333333333.elf
+   text	   data	    bss	    dec	    hex	filename
+   8384	    200	     16	   8600	   2198	p33333333333333.elf
+'Finished building: p33333333333333.siz'
+' '
+11:44:49 **** Incremental Build of configuration Debug for project p33333333333333 ****
+cs-make all 
+'Building file: ../main.c'
+'Invoking: ARM Sourcery Windows GCC C Compiler'
+arm-none-eabi-gcc -O0 -Wall -Wa,-adhlns="main.o.lst" -c -fmessage-length=0 -mapcs-frame -MMD -MP -MF"main.d" -MT"main.d" -mcpu=arm7tdmi -g3 -gdwarf-2 -o "main.o" "../main.c"
+'Finished building: ../main.c'
+' '
+'Building target: p33333333333333.elf'
+'Invoking: ARM Sourcery Windows GCC C Linker'
+arm-none-eabi-gcc -T"D:\EC\PracticasEC\P3(Old)\p33333333333333\ld_script.ld" -nostartfiles -Wl,-Map,p33333333333333.map -mcpu=arm7tdmi -g3 -gdwarf-2 -o "p33333333333333.elf"  ./.metadata/.plugins/org.eclipse.cdt.make.core/specs.o  ./D8Led.o ./button.o ./gpio.o ./init.o ./intcontroller.o ./keyboard.o ./leds.o ./main.o ./timer.o ./utils.o   
+'Finished building target: p33333333333333.elf'
+' '
+'Invoking: ARM Sourcery Windows GNU Create Flash Image'
+arm-none-eabi-objcopy -O binary p33333333333333.elf  "p33333333333333.hex"
+'Finished building: p33333333333333.hex'
+' '
+'Invoking: ARM Sourcery Windows GNU Create Listing'
+arm-none-eabi-objdump -h -S p33333333333333.elf > "p33333333333333.lst"
+'Finished building: p33333333333333.lst'
+' '
+'Invoking: ARM Sourcery Windows GNU Print Size'
+arm-none-eabi-size  --format=berkeley p33333333333333.elf
+   text	   data	    bss	    dec	    hex	filename
+   8384	    200	     16	   8600	   2198	p33333333333333.elf
+'Finished building: p33333333333333.siz'
+' '
+11:44:56 **** Incremental Build of configuration Debug for project p33333333333333 ****
+cs-make all 
+'Invoking: ARM Sourcery Windows GNU Print Size'
+arm-none-eabi-size  --format=berkeley p33333333333333.elf
+   text	   data	    bss	    dec	    hex	filename
+   8384	    200	     16	   8600	   2198	p33333333333333.elf
+'Finished building: p33333333333333.siz'
+' '
+11:46:07 **** Incremental Build of configuration Debug for project p33333333333333 ****
+cs-make all 
+'Invoking: ARM Sourcery Windows GNU Print Size'
+arm-none-eabi-size  --format=berkeley p33333333333333.elf
+   text	   data	    bss	    dec	    hex	filename
+   8384	    200	     16	   8600	   2198	p33333333333333.elf
+'Finished building: p33333333333333.siz'
+' '
+11:47:19 **** Incremental Build of configuration Debug for project p33333333333333 ****
+cs-make all 
+'Invoking: ARM Sourcery Windows GNU Print Size'
+arm-none-eabi-size  --format=berkeley p33333333333333.elf
+   text	   data	    bss	    dec	    hex	filename
+   8384	    200	     16	   8600	   2198	p33333333333333.elf
+'Finished building: p33333333333333.siz'
+' '
+11:47:23 **** Incremental Build of configuration Debug for project p33333333333333 ****
+cs-make all 
+'Invoking: ARM Sourcery Windows GNU Print Size'
+arm-none-eabi-size  --format=berkeley p33333333333333.elf
+   text	   data	    bss	    dec	    hex	filename
+   8384	    200	     16	   8600	   2198	p33333333333333.elf
+'Finished building: p33333333333333.siz'
+' '
+11:50:48 **** Incremental Build of configuration Debug for project p33333333333333 ****
+cs-make all 
+'Building file: ../main.c'
+'Invoking: ARM Sourcery Windows GCC C Compiler'
+arm-none-eabi-gcc -O0 -Wall -Wa,-adhlns="main.o.lst" -c -fmessage-length=0 -mapcs-frame -MMD -MP -MF"main.d" -MT"main.d" -mcpu=arm7tdmi -g3 -gdwarf-2 -o "main.o" "../main.c"
+../main.c: In function 'setup':
+../main.c:254:3: error: too few arguments to function 'ic_conf_line'
+../intcontroller.h:68:5: note: declared here
+cs-make: *** [main.o] Error 1
+11:51:01 **** Incremental Build of configuration Debug for project p33333333333333 ****
+cs-make all 
+'Building file: ../main.c'
+'Invoking: ARM Sourcery Windows GCC C Compiler'
+arm-none-eabi-gcc -O0 -Wall -Wa,-adhlns="main.o.lst" -c -fmessage-length=0 -mapcs-frame -MMD -MP -MF"main.d" -MT"main.d" -mcpu=arm7tdmi -g3 -gdwarf-2 -o "main.o" "../main.c"
+'Finished building: ../main.c'
+' '
+'Building target: p33333333333333.elf'
+'Invoking: ARM Sourcery Windows GCC C Linker'
+arm-none-eabi-gcc -T"D:\EC\PracticasEC\P3(Old)\p33333333333333\ld_script.ld" -nostartfiles -Wl,-Map,p33333333333333.map -mcpu=arm7tdmi -g3 -gdwarf-2 -o "p33333333333333.elf"  ./.metadata/.plugins/org.eclipse.cdt.make.core/specs.o  ./D8Led.o ./button.o ./gpio.o ./init.o ./intcontroller.o ./keyboard.o ./leds.o ./main.o ./timer.o ./utils.o   
+'Finished building target: p33333333333333.elf'
+' '
+'Invoking: ARM Sourcery Windows GNU Create Flash Image'
+arm-none-eabi-objcopy -O binary p33333333333333.elf  "p33333333333333.hex"
+'Finished building: p33333333333333.hex'
+' '
+'Invoking: ARM Sourcery Windows GNU Create Listing'
+arm-none-eabi-objdump -h -S p33333333333333.elf > "p33333333333333.lst"
+'Finished building: p33333333333333.lst'
+' '
+'Invoking: ARM Sourcery Windows GNU Print Size'
+arm-none-eabi-size  --format=berkeley p33333333333333.elf
+   text	   data	    bss	    dec	    hex	filename
+   8408	    200	     16	   8624	   21b0	p33333333333333.elf
+'Finished building: p33333333333333.siz'
+' '
+11:51:08 **** Incremental Build of configuration Debug for project p33333333333333 ****
+cs-make all 
+'Invoking: ARM Sourcery Windows GNU Print Size'
+arm-none-eabi-size  --format=berkeley p33333333333333.elf
+   text	   data	    bss	    dec	    hex	filename
+   8408	    200	     16	   8624	   21b0	p33333333333333.elf
+'Finished building: p33333333333333.siz'
+' '
+11:51:13 **** Incremental Build of configuration Debug for project p33333333333333 ****
+cs-make all 
+'Invoking: ARM Sourcery Windows GNU Print Size'
+arm-none-eabi-size  --format=berkeley p33333333333333.elf
+   text	   data	    bss	    dec	    hex	filename
+   8408	    200	     16	   8624	   21b0	p33333333333333.elf
+'Finished building: p33333333333333.siz'
+' '
+11:51:38 **** Incremental Build of configuration Debug for project p33333333333333 ****
+cs-make all 
+'Invoking: ARM Sourcery Windows GNU Print Size'
+arm-none-eabi-size  --format=berkeley p33333333333333.elf
+   text	   data	    bss	    dec	    hex	filename
+   8408	    200	     16	   8624	   21b0	p33333333333333.elf
+'Finished building: p33333333333333.siz'
+' '
+11:53:06 **** Incremental Build of configuration Debug for project p33333333333333 ****
+cs-make all 
+'Building file: ../main.c'
+'Invoking: ARM Sourcery Windows GCC C Compiler'
+arm-none-eabi-gcc -O0 -Wall -Wa,-adhlns="main.o.lst" -c -fmessage-length=0 -mapcs-frame -MMD -MP -MF"main.d" -MT"main.d" -mcpu=arm7tdmi -g3 -gdwarf-2 -o "main.o" "../main.c"
+'Finished building: ../main.c'
+' '
+'Building target: p33333333333333.elf'
+'Invoking: ARM Sourcery Windows GCC C Linker'
+arm-none-eabi-gcc -T"D:\EC\PracticasEC\P3(Old)\p33333333333333\ld_script.ld" -nostartfiles -Wl,-Map,p33333333333333.map -mcpu=arm7tdmi -g3 -gdwarf-2 -o "p33333333333333.elf"  ./.metadata/.plugins/org.eclipse.cdt.make.core/specs.o  ./D8Led.o ./button.o ./gpio.o ./init.o ./intcontroller.o ./keyboard.o ./leds.o ./main.o ./timer.o ./utils.o   
+'Finished building target: p33333333333333.elf'
+' '
+'Invoking: ARM Sourcery Windows GNU Create Flash Image'
+arm-none-eabi-objcopy -O binary p33333333333333.elf  "p33333333333333.hex"
+'Finished building: p33333333333333.hex'
+' '
+'Invoking: ARM Sourcery Windows GNU Create Listing'
+arm-none-eabi-objdump -h -S p33333333333333.elf > "p33333333333333.lst"
+'Finished building: p33333333333333.lst'
+' '
+'Invoking: ARM Sourcery Windows GNU Print Size'
+arm-none-eabi-size  --format=berkeley p33333333333333.elf
+   text	   data	    bss	    dec	    hex	filename
+   8396	    200	     16	   8612	   21a4	p33333333333333.elf
+'Finished building: p33333333333333.siz'
+' '
+11:53:11 **** Incremental Build of configuration Debug for project p33333333333333 ****
+cs-make all 
+'Invoking: ARM Sourcery Windows GNU Print Size'
+arm-none-eabi-size  --format=berkeley p33333333333333.elf
+   text	   data	    bss	    dec	    hex	filename
+   8396	    200	     16	   8612	   21a4	p33333333333333.elf
+'Finished building: p33333333333333.siz'
+' '
+11:54:40 **** Incremental Build of configuration Debug for project p33333333333333 ****
+cs-make all 
+'Building file: ../main.c'
+'Invoking: ARM Sourcery Windows GCC C Compiler'
+arm-none-eabi-gcc -O0 -Wall -Wa,-adhlns="main.o.lst" -c -fmessage-length=0 -mapcs-frame -MMD -MP -MF"main.d" -MT"main.d" -mcpu=arm7tdmi -g3 -gdwarf-2 -o "main.o" "../main.c"
+'Finished building: ../main.c'
+' '
+'Building target: p33333333333333.elf'
+'Invoking: ARM Sourcery Windows GCC C Linker'
+arm-none-eabi-gcc -T"D:\EC\PracticasEC\P3(Old)\p33333333333333\ld_script.ld" -nostartfiles -Wl,-Map,p33333333333333.map -mcpu=arm7tdmi -g3 -gdwarf-2 -o "p33333333333333.elf"  ./.metadata/.plugins/org.eclipse.cdt.make.core/specs.o  ./D8Led.o ./button.o ./gpio.o ./init.o ./intcontroller.o ./keyboard.o ./leds.o ./main.o ./timer.o ./utils.o   
+'Finished building target: p33333333333333.elf'
+' '
+'Invoking: ARM Sourcery Windows GNU Create Flash Image'
+arm-none-eabi-objcopy -O binary p33333333333333.elf  "p33333333333333.hex"
+'Finished building: p33333333333333.hex'
+' '
+'Invoking: ARM Sourcery Windows GNU Create Listing'
+arm-none-eabi-objdump -h -S p33333333333333.elf > "p33333333333333.lst"
+'Finished building: p33333333333333.lst'
+' '
+'Invoking: ARM Sourcery Windows GNU Print Size'
+arm-none-eabi-size  --format=berkeley p33333333333333.elf
+   text	   data	    bss	    dec	    hex	filename
+   8364	    200	     16	   8580	   2184	p33333333333333.elf
+'Finished building: p33333333333333.siz'
+' '
+11:54:46 **** Incremental Build of configuration Debug for project p33333333333333 ****
+cs-make all 
+'Invoking: ARM Sourcery Windows GNU Print Size'
+arm-none-eabi-size  --format=berkeley p33333333333333.elf
+   text	   data	    bss	    dec	    hex	filename
+   8364	    200	     16	   8580	   2184	p33333333333333.elf
+'Finished building: p33333333333333.siz'
+' '
+11:56:22 **** Incremental Build of configuration Debug for project p33333333333333 ****
+cs-make all 
+'Building file: ../main.c'
+'Invoking: ARM Sourcery Windows GCC C Compiler'
+arm-none-eabi-gcc -O0 -Wall -Wa,-adhlns="main.o.lst" -c -fmessage-length=0 -mapcs-frame -MMD -MP -MF"main.d" -MT"main.d" -mcpu=arm7tdmi -g3 -gdwarf-2 -o "main.o" "../main.c"
+'Finished building: ../main.c'
+' '
+'Building target: p33333333333333.elf'
+'Invoking: ARM Sourcery Windows GCC C Linker'
+arm-none-eabi-gcc -T"D:\EC\PracticasEC\P3(Old)\p33333333333333\ld_script.ld" -nostartfiles -Wl,-Map,p33333333333333.map -mcpu=arm7tdmi -g3 -gdwarf-2 -o "p33333333333333.elf"  ./.metadata/.plugins/org.eclipse.cdt.make.core/specs.o  ./D8Led.o ./button.o ./gpio.o ./init.o ./intcontroller.o ./keyboard.o ./leds.o ./main.o ./timer.o ./utils.o   
+'Finished building target: p33333333333333.elf'
+' '
+'Invoking: ARM Sourcery Windows GNU Create Flash Image'
+arm-none-eabi-objcopy -O binary p33333333333333.elf  "p33333333333333.hex"
+'Finished building: p33333333333333.hex'
+' '
+'Invoking: ARM Sourcery Windows GNU Create Listing'
+arm-none-eabi-objdump -h -S p33333333333333.elf > "p33333333333333.lst"
+'Finished building: p33333333333333.lst'
+' '
+'Invoking: ARM Sourcery Windows GNU Print Size'
+arm-none-eabi-size  --format=berkeley p33333333333333.elf
+   text	   data	    bss	    dec	    hex	filename
+   8364	    200	     16	   8580	   2184	p33333333333333.elf
+'Finished building: p33333333333333.siz'
+' '
+11:56:28 **** Incremental Build of configuration Debug for project p33333333333333 ****
+cs-make all 
+'Invoking: ARM Sourcery Windows GNU Print Size'
+arm-none-eabi-size  --format=berkeley p33333333333333.elf
+   text	   data	    bss	    dec	    hex	filename
+   8364	    200	     16	   8580	   2184	p33333333333333.elf
+'Finished building: p33333333333333.siz'
+' '
+12:09:49 **** Incremental Build of configuration Debug for project p33333333333333 ****
+cs-make all 
+'Building file: ../D8Led.c'
+'Invoking: ARM Sourcery Windows GCC C Compiler'
+arm-none-eabi-gcc -O0 -Wall -Wa,-adhlns="D8Led.o.lst" -c -fmessage-length=0 -mapcs-frame -MMD -MP -MF"D8Led.d" -MT"D8Led.d" -mcpu=arm7tdmi -g3 -gdwarf-2 -o "D8Led.o" "../D8Led.c"
+'Finished building: ../D8Led.c'
+' '
+'Building file: ../main.c'
+'Invoking: ARM Sourcery Windows GCC C Compiler'
+arm-none-eabi-gcc -O0 -Wall -Wa,-adhlns="main.o.lst" -c -fmessage-length=0 -mapcs-frame -MMD -MP -MF"main.d" -MT"main.d" -mcpu=arm7tdmi -g3 -gdwarf-2 -o "main.o" "../main.c"
+'Finished building: ../main.c'
+' '
+'Building target: p33333333333333.elf'
+'Invoking: ARM Sourcery Windows GCC C Linker'
+arm-none-eabi-gcc -T"D:\EC\PracticasEC\P3(Old)\p33333333333333\ld_script.ld" -nostartfiles -Wl,-Map,p33333333333333.map -mcpu=arm7tdmi -g3 -gdwarf-2 -o "p33333333333333.elf"  ./.metadata/.plugins/org.eclipse.cdt.make.core/specs.o  ./D8Led.o ./button.o ./gpio.o ./init.o ./intcontroller.o ./keyboard.o ./leds.o ./main.o ./timer.o ./utils.o   
+'Finished building target: p33333333333333.elf'
+' '
+'Invoking: ARM Sourcery Windows GNU Create Flash Image'
+arm-none-eabi-objcopy -O binary p33333333333333.elf  "p33333333333333.hex"
+'Finished building: p33333333333333.hex'
+' '
+'Invoking: ARM Sourcery Windows GNU Create Listing'
+arm-none-eabi-objdump -h -S p33333333333333.elf > "p33333333333333.lst"
+'Finished building: p33333333333333.lst'
+' '
+'Invoking: ARM Sourcery Windows GNU Print Size'
+arm-none-eabi-size  --format=berkeley p33333333333333.elf
+   text	   data	    bss	    dec	    hex	filename
+   8592	    200	     20	   8812	   226c	p33333333333333.elf
+'Finished building: p33333333333333.siz'
+' '
+12:09:58 **** Incremental Build of configuration Debug for project p33333333333333 ****
+cs-make all 
+'Invoking: ARM Sourcery Windows GNU Print Size'
+arm-none-eabi-size  --format=berkeley p33333333333333.elf
+   text	   data	    bss	    dec	    hex	filename
+   8592	    200	     20	   8812	   226c	p33333333333333.elf
+'Finished building: p33333333333333.siz'
+' '
+12:11:10 **** Incremental Build of configuration Debug for project p33333333333333 ****
+cs-make all 
+'Building file: ../main.c'
+'Invoking: ARM Sourcery Windows GCC C Compiler'
+arm-none-eabi-gcc -O0 -Wall -Wa,-adhlns="main.o.lst" -c -fmessage-length=0 -mapcs-frame -MMD -MP -MF"main.d" -MT"main.d" -mcpu=arm7tdmi -g3 -gdwarf-2 -o "main.o" "../main.c"
+'Finished building: ../main.c'
+' '
+'Building target: p33333333333333.elf'
+'Invoking: ARM Sourcery Windows GCC C Linker'
+arm-none-eabi-gcc -T"D:\EC\PracticasEC\P3(Old)\p33333333333333\ld_script.ld" -nostartfiles -Wl,-Map,p33333333333333.map -mcpu=arm7tdmi -g3 -gdwarf-2 -o "p33333333333333.elf"  ./.metadata/.plugins/org.eclipse.cdt.make.core/specs.o  ./D8Led.o ./button.o ./gpio.o ./init.o ./intcontroller.o ./keyboard.o ./leds.o ./main.o ./timer.o ./utils.o   
+'Finished building target: p33333333333333.elf'
+' '
+'Invoking: ARM Sourcery Windows GNU Create Flash Image'
+arm-none-eabi-objcopy -O binary p33333333333333.elf  "p33333333333333.hex"
+'Finished building: p33333333333333.hex'
+' '
+'Invoking: ARM Sourcery Windows GNU Create Listing'
+arm-none-eabi-objdump -h -S p33333333333333.elf > "p33333333333333.lst"
+'Finished building: p33333333333333.lst'
+' '
+'Invoking: ARM Sourcery Windows GNU Print Size'
+arm-none-eabi-size  --format=berkeley p33333333333333.elf
+   text	   data	    bss	    dec	    hex	filename
+   8592	    200	     20	   8812	   226c	p33333333333333.elf
+'Finished building: p33333333333333.siz'
+' '
+12:11:15 **** Incremental Build of configuration Debug for project p33333333333333 ****
+cs-make all 
+'Invoking: ARM Sourcery Windows GNU Print Size'
+arm-none-eabi-size  --format=berkeley p33333333333333.elf
+   text	   data	    bss	    dec	    hex	filename
+   8592	    200	     20	   8812	   226c	p33333333333333.elf
+'Finished building: p33333333333333.siz'
+' '
+12:14:02 **** Incremental Build of configuration Debug for project p33333333333333 ****
+cs-make all 
+'Building file: ../main.c'
+'Invoking: ARM Sourcery Windows GCC C Compiler'
+arm-none-eabi-gcc -O0 -Wall -Wa,-adhlns="main.o.lst" -c -fmessage-length=0 -mapcs-frame -MMD -MP -MF"main.d" -MT"main.d" -mcpu=arm7tdmi -g3 -gdwarf-2 -o "main.o" "../main.c"
+'Finished building: ../main.c'
+' '
+'Building target: p33333333333333.elf'
+'Invoking: ARM Sourcery Windows GCC C Linker'
+arm-none-eabi-gcc -T"D:\EC\PracticasEC\P3(Old)\p33333333333333\ld_script.ld" -nostartfiles -Wl,-Map,p33333333333333.map -mcpu=arm7tdmi -g3 -gdwarf-2 -o "p33333333333333.elf"  ./.metadata/.plugins/org.eclipse.cdt.make.core/specs.o  ./D8Led.o ./button.o ./gpio.o ./init.o ./intcontroller.o ./keyboard.o ./leds.o ./main.o ./timer.o ./utils.o   
+'Finished building target: p33333333333333.elf'
+' '
+'Invoking: ARM Sourcery Windows GNU Create Flash Image'
+arm-none-eabi-objcopy -O binary p33333333333333.elf  "p33333333333333.hex"
+'Finished building: p33333333333333.hex'
+' '
+'Invoking: ARM Sourcery Windows GNU Create Listing'
+arm-none-eabi-objdump -h -S p33333333333333.elf > "p33333333333333.lst"
+'Finished building: p33333333333333.lst'
+' '
+'Invoking: ARM Sourcery Windows GNU Print Size'
+arm-none-eabi-size  --format=berkeley p33333333333333.elf
+   text	   data	    bss	    dec	    hex	filename
+   8624	    200	     20	   8844	   228c	p33333333333333.elf
+'Finished building: p33333333333333.siz'
+' '
+12:14:07 **** Incremental Build of configuration Debug for project p33333333333333 ****
+cs-make all 
+'Invoking: ARM Sourcery Windows GNU Print Size'
+arm-none-eabi-size  --format=berkeley p33333333333333.elf
+   text	   data	    bss	    dec	    hex	filename
+   8624	    200	     20	   8844	   228c	p33333333333333.elf
+'Finished building: p33333333333333.siz'
+' '
+12:16:14 **** Incremental Build of configuration Debug for project p33333333333333 ****
+cs-make all 
+'Building file: ../main.c'
+'Invoking: ARM Sourcery Windows GCC C Compiler'
+arm-none-eabi-gcc -O0 -Wall -Wa,-adhlns="main.o.lst" -c -fmessage-length=0 -mapcs-frame -MMD -MP -MF"main.d" -MT"main.d" -mcpu=arm7tdmi -g3 -gdwarf-2 -o "main.o" "../main.c"
+'Finished building: ../main.c'
+' '
+'Building target: p33333333333333.elf'
+'Invoking: ARM Sourcery Windows GCC C Linker'
+arm-none-eabi-gcc -T"D:\EC\PracticasEC\P3(Old)\p33333333333333\ld_script.ld" -nostartfiles -Wl,-Map,p33333333333333.map -mcpu=arm7tdmi -g3 -gdwarf-2 -o "p33333333333333.elf"  ./.metadata/.plugins/org.eclipse.cdt.make.core/specs.o  ./D8Led.o ./button.o ./gpio.o ./init.o ./intcontroller.o ./keyboard.o ./leds.o ./main.o ./timer.o ./utils.o   
+'Finished building target: p33333333333333.elf'
+' '
+'Invoking: ARM Sourcery Windows GNU Create Flash Image'
+arm-none-eabi-objcopy -O binary p33333333333333.elf  "p33333333333333.hex"
+'Finished building: p33333333333333.hex'
+' '
+'Invoking: ARM Sourcery Windows GNU Create Listing'
+arm-none-eabi-objdump -h -S p33333333333333.elf > "p33333333333333.lst"
+'Finished building: p33333333333333.lst'
+' '
+'Invoking: ARM Sourcery Windows GNU Print Size'
+arm-none-eabi-size  --format=berkeley p33333333333333.elf
+   text	   data	    bss	    dec	    hex	filename
+   8656	    200	     20	   8876	   22ac	p33333333333333.elf
+'Finished building: p33333333333333.siz'
+' '
+12:16:19 **** Incremental Build of configuration Debug for project p33333333333333 ****
+cs-make all 
+'Invoking: ARM Sourcery Windows GNU Print Size'
+arm-none-eabi-size  --format=berkeley p33333333333333.elf
+   text	   data	    bss	    dec	    hex	filename
+   8656	    200	     20	   8876	   22ac	p33333333333333.elf
+'Finished building: p33333333333333.siz'
+' '
+12:17:49 **** Incremental Build of configuration Debug for project p33333333333333 ****
+cs-make all 
+'Building file: ../main.c'
+'Invoking: ARM Sourcery Windows GCC C Compiler'
+arm-none-eabi-gcc -O0 -Wall -Wa,-adhlns="main.o.lst" -c -fmessage-length=0 -mapcs-frame -MMD -MP -MF"main.d" -MT"main.d" -mcpu=arm7tdmi -g3 -gdwarf-2 -o "main.o" "../main.c"
+'Finished building: ../main.c'
+' '
+'Building target: p33333333333333.elf'
+'Invoking: ARM Sourcery Windows GCC C Linker'
+arm-none-eabi-gcc -T"D:\EC\PracticasEC\P3(Old)\p33333333333333\ld_script.ld" -nostartfiles -Wl,-Map,p33333333333333.map -mcpu=arm7tdmi -g3 -gdwarf-2 -o "p33333333333333.elf"  ./.metadata/.plugins/org.eclipse.cdt.make.core/specs.o  ./D8Led.o ./button.o ./gpio.o ./init.o ./intcontroller.o ./keyboard.o ./leds.o ./main.o ./timer.o ./utils.o   
+'Finished building target: p33333333333333.elf'
+' '
+'Invoking: ARM Sourcery Windows GNU Create Flash Image'
+arm-none-eabi-objcopy -O binary p33333333333333.elf  "p33333333333333.hex"
+'Finished building: p33333333333333.hex'
+' '
+'Invoking: ARM Sourcery Windows GNU Create Listing'
+arm-none-eabi-objdump -h -S p33333333333333.elf > "p33333333333333.lst"
+'Finished building: p33333333333333.lst'
+' '
+'Invoking: ARM Sourcery Windows GNU Print Size'
+arm-none-eabi-size  --format=berkeley p33333333333333.elf
+   text	   data	    bss	    dec	    hex	filename
+   8656	    200	     20	   8876	   22ac	p33333333333333.elf
+'Finished building: p33333333333333.siz'
+' '
+12:17:54 **** Incremental Build of configuration Debug for project p33333333333333 ****
+cs-make all 
+'Invoking: ARM Sourcery Windows GNU Print Size'
+arm-none-eabi-size  --format=berkeley p33333333333333.elf
+   text	   data	    bss	    dec	    hex	filename
+   8656	    200	     20	   8876	   22ac	p33333333333333.elf
+'Finished building: p33333333333333.siz'
+' '
+12:19:27 **** Incremental Build of configuration Debug for project p33333333333333 ****
+cs-make all 
+'Building file: ../main.c'
+'Invoking: ARM Sourcery Windows GCC C Compiler'
+arm-none-eabi-gcc -O0 -Wall -Wa,-adhlns="main.o.lst" -c -fmessage-length=0 -mapcs-frame -MMD -MP -MF"main.d" -MT"main.d" -mcpu=arm7tdmi -g3 -gdwarf-2 -o "main.o" "../main.c"
+'Finished building: ../main.c'
+' '
+'Building target: p33333333333333.elf'
+'Invoking: ARM Sourcery Windows GCC C Linker'
+arm-none-eabi-gcc -T"D:\EC\PracticasEC\P3(Old)\p33333333333333\ld_script.ld" -nostartfiles -Wl,-Map,p33333333333333.map -mcpu=arm7tdmi -g3 -gdwarf-2 -o "p33333333333333.elf"  ./.metadata/.plugins/org.eclipse.cdt.make.core/specs.o  ./D8Led.o ./button.o ./gpio.o ./init.o ./intcontroller.o ./keyboard.o ./leds.o ./main.o ./timer.o ./utils.o   
+'Finished building target: p33333333333333.elf'
+' '
+'Invoking: ARM Sourcery Windows GNU Create Flash Image'
+arm-none-eabi-objcopy -O binary p33333333333333.elf  "p33333333333333.hex"
+'Finished building: p33333333333333.hex'
+' '
+'Invoking: ARM Sourcery Windows GNU Create Listing'
+arm-none-eabi-objdump -h -S p33333333333333.elf > "p33333333333333.lst"
+'Finished building: p33333333333333.lst'
+' '
+'Invoking: ARM Sourcery Windows GNU Print Size'
+arm-none-eabi-size  --format=berkeley p33333333333333.elf
+   text	   data	    bss	    dec	    hex	filename
+   8640	    200	     20	   8860	   229c	p33333333333333.elf
+'Finished building: p33333333333333.siz'
+' '
+12:19:32 **** Incremental Build of configuration Debug for project p33333333333333 ****
+cs-make all 
+'Invoking: ARM Sourcery Windows GNU Print Size'
+arm-none-eabi-size  --format=berkeley p33333333333333.elf
+   text	   data	    bss	    dec	    hex	filename
+   8640	    200	     20	   8860	   229c	p33333333333333.elf
+'Finished building: p33333333333333.siz'
+' '
+12:21:09 **** Incremental Build of configuration Debug for project p33333333333333 ****
+cs-make all 
+'Building file: ../main.c'
+'Invoking: ARM Sourcery Windows GCC C Compiler'
+arm-none-eabi-gcc -O0 -Wall -Wa,-adhlns="main.o.lst" -c -fmessage-length=0 -mapcs-frame -MMD -MP -MF"main.d" -MT"main.d" -mcpu=arm7tdmi -g3 -gdwarf-2 -o "main.o" "../main.c"
+'Finished building: ../main.c'
+' '
+'Building target: p33333333333333.elf'
+'Invoking: ARM Sourcery Windows GCC C Linker'
+arm-none-eabi-gcc -T"D:\EC\PracticasEC\P3(Old)\p33333333333333\ld_script.ld" -nostartfiles -Wl,-Map,p33333333333333.map -mcpu=arm7tdmi -g3 -gdwarf-2 -o "p33333333333333.elf"  ./.metadata/.plugins/org.eclipse.cdt.make.core/specs.o  ./D8Led.o ./button.o ./gpio.o ./init.o ./intcontroller.o ./keyboard.o ./leds.o ./main.o ./timer.o ./utils.o   
+'Finished building target: p33333333333333.elf'
+' '
+'Invoking: ARM Sourcery Windows GNU Create Flash Image'
+arm-none-eabi-objcopy -O binary p33333333333333.elf  "p33333333333333.hex"
+'Finished building: p33333333333333.hex'
+' '
+'Invoking: ARM Sourcery Windows GNU Create Listing'
+arm-none-eabi-objdump -h -S p33333333333333.elf > "p33333333333333.lst"
+'Finished building: p33333333333333.lst'
+' '
+'Invoking: ARM Sourcery Windows GNU Print Size'
+arm-none-eabi-size  --format=berkeley p33333333333333.elf
+   text	   data	    bss	    dec	    hex	filename
+   8624	    200	     20	   8844	   228c	p33333333333333.elf
+'Finished building: p33333333333333.siz'
+' '
+12:21:14 **** Incremental Build of configuration Debug for project p33333333333333 ****
+cs-make all 
+'Invoking: ARM Sourcery Windows GNU Print Size'
+arm-none-eabi-size  --format=berkeley p33333333333333.elf
+   text	   data	    bss	    dec	    hex	filename
+   8624	    200	     20	   8844	   228c	p33333333333333.elf
+'Finished building: p33333333333333.siz'
+' '
+12:24:33 **** Incremental Build of configuration Debug for project p33333333333333 ****
+cs-make all 
+'Building file: ../main.c'
+'Invoking: ARM Sourcery Windows GCC C Compiler'
+arm-none-eabi-gcc -O0 -Wall -Wa,-adhlns="main.o.lst" -c -fmessage-length=0 -mapcs-frame -MMD -MP -MF"main.d" -MT"main.d" -mcpu=arm7tdmi -g3 -gdwarf-2 -o "main.o" "../main.c"
+'Finished building: ../main.c'
+' '
+'Building target: p33333333333333.elf'
+'Invoking: ARM Sourcery Windows GCC C Linker'
+arm-none-eabi-gcc -T"D:\EC\PracticasEC\P3(Old)\p33333333333333\ld_script.ld" -nostartfiles -Wl,-Map,p33333333333333.map -mcpu=arm7tdmi -g3 -gdwarf-2 -o "p33333333333333.elf"  ./.metadata/.plugins/org.eclipse.cdt.make.core/specs.o  ./D8Led.o ./button.o ./gpio.o ./init.o ./intcontroller.o ./keyboard.o ./leds.o ./main.o ./timer.o ./utils.o   
+'Finished building target: p33333333333333.elf'
+' '
+'Invoking: ARM Sourcery Windows GNU Create Flash Image'
+arm-none-eabi-objcopy -O binary p33333333333333.elf  "p33333333333333.hex"
+'Finished building: p33333333333333.hex'
+' '
+'Invoking: ARM Sourcery Windows GNU Create Listing'
+arm-none-eabi-objdump -h -S p33333333333333.elf > "p33333333333333.lst"
+'Finished building: p33333333333333.lst'
+' '
+'Invoking: ARM Sourcery Windows GNU Print Size'
+arm-none-eabi-size  --format=berkeley p33333333333333.elf
+   text	   data	    bss	    dec	    hex	filename
+   8640	    200	     20	   8860	   229c	p33333333333333.elf
+'Finished building: p33333333333333.siz'
+' '
+12:24:38 **** Incremental Build of configuration Debug for project p33333333333333 ****
+cs-make all 
+'Invoking: ARM Sourcery Windows GNU Print Size'
+arm-none-eabi-size  --format=berkeley p33333333333333.elf
+   text	   data	    bss	    dec	    hex	filename
+   8640	    200	     20	   8860	   229c	p33333333333333.elf
+'Finished building: p33333333333333.siz'
+' '
+12:30:20 **** Incremental Build of configuration Debug for project p33333333333333 ****
+cs-make all 
+'Building file: ../main.c'
+'Invoking: ARM Sourcery Windows GCC C Compiler'
+arm-none-eabi-gcc -O0 -Wall -Wa,-adhlns="main.o.lst" -c -fmessage-length=0 -mapcs-frame -MMD -MP -MF"main.d" -MT"main.d" -mcpu=arm7tdmi -g3 -gdwarf-2 -o "main.o" "../main.c"
+'Finished building: ../main.c'
+' '
+'Building target: p33333333333333.elf'
+'Invoking: ARM Sourcery Windows GCC C Linker'
+arm-none-eabi-gcc -T"D:\EC\PracticasEC\P3(Old)\p33333333333333\ld_script.ld" -nostartfiles -Wl,-Map,p33333333333333.map -mcpu=arm7tdmi -g3 -gdwarf-2 -o "p33333333333333.elf"  ./.metadata/.plugins/org.eclipse.cdt.make.core/specs.o  ./D8Led.o ./button.o ./gpio.o ./init.o ./intcontroller.o ./keyboard.o ./leds.o ./main.o ./timer.o ./utils.o   
+'Finished building target: p33333333333333.elf'
+' '
+'Invoking: ARM Sourcery Windows GNU Create Flash Image'
+arm-none-eabi-objcopy -O binary p33333333333333.elf  "p33333333333333.hex"
+'Finished building: p33333333333333.hex'
+' '
+'Invoking: ARM Sourcery Windows GNU Create Listing'
+arm-none-eabi-objdump -h -S p33333333333333.elf > "p33333333333333.lst"
+'Finished building: p33333333333333.lst'
+' '
+'Invoking: ARM Sourcery Windows GNU Print Size'
+arm-none-eabi-size  --format=berkeley p33333333333333.elf
+   text	   data	    bss	    dec	    hex	filename
+   8648	    200	     20	   8868	   22a4	p33333333333333.elf
+'Finished building: p33333333333333.siz'
+' '
+12:30:26 **** Incremental Build of configuration Debug for project p33333333333333 ****
+cs-make all 
+'Invoking: ARM Sourcery Windows GNU Print Size'
+arm-none-eabi-size  --format=berkeley p33333333333333.elf
+   text	   data	    bss	    dec	    hex	filename
+   8648	    200	     20	   8868	   22a4	p33333333333333.elf
+'Finished building: p33333333333333.siz'
+' '
+12:30:56 **** Incremental Build of configuration Debug for project p33333333333333 ****
+cs-make all 
+'Invoking: ARM Sourcery Windows GNU Print Size'
+arm-none-eabi-size  --format=berkeley p33333333333333.elf
+   text	   data	    bss	    dec	    hex	filename
+   8648	    200	     20	   8868	   22a4	p33333333333333.elf
+'Finished building: p33333333333333.siz'
+' '
+12:31:06 **** Incremental Build of configuration Debug for project p33333333333333 ****
+cs-make all 
+'Invoking: ARM Sourcery Windows GNU Print Size'
+arm-none-eabi-size  --format=berkeley p33333333333333.elf
+   text	   data	    bss	    dec	    hex	filename
+   8648	    200	     20	   8868	   22a4	p33333333333333.elf
+'Finished building: p33333333333333.siz'
+' '
+12:32:07 **** Incremental Build of configuration Debug for project p33333333333333 ****
+cs-make all 
+'Building file: ../main.c'
+'Invoking: ARM Sourcery Windows GCC C Compiler'
+arm-none-eabi-gcc -O0 -Wall -Wa,-adhlns="main.o.lst" -c -fmessage-length=0 -mapcs-frame -MMD -MP -MF"main.d" -MT"main.d" -mcpu=arm7tdmi -g3 -gdwarf-2 -o "main.o" "../main.c"
+'Finished building: ../main.c'
+' '
+'Building target: p33333333333333.elf'
+'Invoking: ARM Sourcery Windows GCC C Linker'
+arm-none-eabi-gcc -T"D:\EC\PracticasEC\P3(Old)\p33333333333333\ld_script.ld" -nostartfiles -Wl,-Map,p33333333333333.map -mcpu=arm7tdmi -g3 -gdwarf-2 -o "p33333333333333.elf"  ./.metadata/.plugins/org.eclipse.cdt.make.core/specs.o  ./D8Led.o ./button.o ./gpio.o ./init.o ./intcontroller.o ./keyboard.o ./leds.o ./main.o ./timer.o ./utils.o   
+'Finished building target: p33333333333333.elf'
+' '
+'Invoking: ARM Sourcery Windows GNU Create Flash Image'
+arm-none-eabi-objcopy -O binary p33333333333333.elf  "p33333333333333.hex"
+'Finished building: p33333333333333.hex'
+' '
+'Invoking: ARM Sourcery Windows GNU Create Listing'
+arm-none-eabi-objdump -h -S p33333333333333.elf > "p33333333333333.lst"
+'Finished building: p33333333333333.lst'
+' '
+'Invoking: ARM Sourcery Windows GNU Print Size'
+arm-none-eabi-size  --format=berkeley p33333333333333.elf
+   text	   data	    bss	    dec	    hex	filename
+   8600	    200	     20	   8820	   2274	p33333333333333.elf
+'Finished building: p33333333333333.siz'
+' '
+12:32:12 **** Incremental Build of configuration Debug for project p33333333333333 ****
+cs-make all 
+'Invoking: ARM Sourcery Windows GNU Print Size'
+arm-none-eabi-size  --format=berkeley p33333333333333.elf
+   text	   data	    bss	    dec	    hex	filename
+   8600	    200	     20	   8820	   2274	p33333333333333.elf
+'Finished building: p33333333333333.siz'
+' '
+12:33:01 **** Incremental Build of configuration Debug for project p33333333333333 ****
+cs-make all 
+'Building file: ../main.c'
+'Invoking: ARM Sourcery Windows GCC C Compiler'
+arm-none-eabi-gcc -O0 -Wall -Wa,-adhlns="main.o.lst" -c -fmessage-length=0 -mapcs-frame -MMD -MP -MF"main.d" -MT"main.d" -mcpu=arm7tdmi -g3 -gdwarf-2 -o "main.o" "../main.c"
+'Finished building: ../main.c'
+' '
+'Building target: p33333333333333.elf'
+'Invoking: ARM Sourcery Windows GCC C Linker'
+arm-none-eabi-gcc -T"D:\EC\PracticasEC\P3(Old)\p33333333333333\ld_script.ld" -nostartfiles -Wl,-Map,p33333333333333.map -mcpu=arm7tdmi -g3 -gdwarf-2 -o "p33333333333333.elf"  ./.metadata/.plugins/org.eclipse.cdt.make.core/specs.o  ./D8Led.o ./button.o ./gpio.o ./init.o ./intcontroller.o ./keyboard.o ./leds.o ./main.o ./timer.o ./utils.o   
+'Finished building target: p33333333333333.elf'
+' '
+'Invoking: ARM Sourcery Windows GNU Create Flash Image'
+arm-none-eabi-objcopy -O binary p33333333333333.elf  "p33333333333333.hex"
+'Finished building: p33333333333333.hex'
+' '
+'Invoking: ARM Sourcery Windows GNU Create Listing'
+arm-none-eabi-objdump -h -S p33333333333333.elf > "p33333333333333.lst"
+'Finished building: p33333333333333.lst'
+' '
+'Invoking: ARM Sourcery Windows GNU Print Size'
+arm-none-eabi-size  --format=berkeley p33333333333333.elf
+   text	   data	    bss	    dec	    hex	filename
+   8616	    200	     20	   8836	   2284	p33333333333333.elf
+'Finished building: p33333333333333.siz'
+' '
+12:33:06 **** Incremental Build of configuration Debug for project p33333333333333 ****
+cs-make all 
+'Invoking: ARM Sourcery Windows GNU Print Size'
+arm-none-eabi-size  --format=berkeley p33333333333333.elf
+   text	   data	    bss	    dec	    hex	filename
+   8616	    200	     20	   8836	   2284	p33333333333333.elf
+'Finished building: p33333333333333.siz'
+' '
+12:37:43 **** Incremental Build of configuration Debug for project p33333333333333 ****
+cs-make all 
+'Building file: ../main.c'
+'Invoking: ARM Sourcery Windows GCC C Compiler'
+arm-none-eabi-gcc -O0 -Wall -Wa,-adhlns="main.o.lst" -c -fmessage-length=0 -mapcs-frame -MMD -MP -MF"main.d" -MT"main.d" -mcpu=arm7tdmi -g3 -gdwarf-2 -o "main.o" "../main.c"
+'Finished building: ../main.c'
+' '
+'Building target: p33333333333333.elf'
+'Invoking: ARM Sourcery Windows GCC C Linker'
+arm-none-eabi-gcc -T"D:\EC\PracticasEC\P3(Old)\p33333333333333\ld_script.ld" -nostartfiles -Wl,-Map,p33333333333333.map -mcpu=arm7tdmi -g3 -gdwarf-2 -o "p33333333333333.elf"  ./.metadata/.plugins/org.eclipse.cdt.make.core/specs.o  ./D8Led.o ./button.o ./gpio.o ./init.o ./intcontroller.o ./keyboard.o ./leds.o ./main.o ./timer.o ./utils.o   
+'Finished building target: p33333333333333.elf'
+' '
+'Invoking: ARM Sourcery Windows GNU Create Flash Image'
+arm-none-eabi-objcopy -O binary p33333333333333.elf  "p33333333333333.hex"
+'Finished building: p33333333333333.hex'
+' '
+'Invoking: ARM Sourcery Windows GNU Create Listing'
+arm-none-eabi-objdump -h -S p33333333333333.elf > "p33333333333333.lst"
+'Finished building: p33333333333333.lst'
+' '
+'Invoking: ARM Sourcery Windows GNU Print Size'
+arm-none-eabi-size  --format=berkeley p33333333333333.elf
+   text	   data	    bss	    dec	    hex	filename
+   8700	    200	     24	   8924	   22dc	p33333333333333.elf
+'Finished building: p33333333333333.siz'
+' '
+12:37:52 **** Incremental Build of configuration Debug for project p33333333333333 ****
+cs-make all 
+'Invoking: ARM Sourcery Windows GNU Print Size'
+arm-none-eabi-size  --format=berkeley p33333333333333.elf
+   text	   data	    bss	    dec	    hex	filename
+   8700	    200	     24	   8924	   22dc	p33333333333333.elf
+'Finished building: p33333333333333.siz'
+' '
+12:37:57 **** Incremental Build of configuration Debug for project p33333333333333 ****
+cs-make all 
+'Invoking: ARM Sourcery Windows GNU Print Size'
+arm-none-eabi-size  --format=berkeley p33333333333333.elf
+   text	   data	    bss	    dec	    hex	filename
+   8700	    200	     24	   8924	   22dc	p33333333333333.elf
+'Finished building: p33333333333333.siz'
+' '
+12:38:22 **** Incremental Build of configuration Debug for project p33333333333333 ****
+cs-make all 
+'Invoking: ARM Sourcery Windows GNU Print Size'
+arm-none-eabi-size  --format=berkeley p33333333333333.elf
+   text	   data	    bss	    dec	    hex	filename
+   8700	    200	     24	   8924	   22dc	p33333333333333.elf
+'Finished building: p33333333333333.siz'
+' '
+12:38:28 **** Incremental Build of configuration Debug for project p33333333333333 ****
+cs-make all 
+'Invoking: ARM Sourcery Windows GNU Print Size'
+arm-none-eabi-size  --format=berkeley p33333333333333.elf
+   text	   data	    bss	    dec	    hex	filename
+   8700	    200	     24	   8924	   22dc	p33333333333333.elf
+'Finished building: p33333333333333.siz'
+' '

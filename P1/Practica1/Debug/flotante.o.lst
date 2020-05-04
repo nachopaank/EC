@@ -1,0 +1,91 @@
+   1              		.cpu arm7tdmi
+   2              		.fpu softvfp
+   3              		.eabi_attribute 20, 1
+   4              		.eabi_attribute 21, 1
+   5              		.eabi_attribute 23, 3
+   6              		.eabi_attribute 24, 1
+   7              		.eabi_attribute 25, 1
+   8              		.eabi_attribute 26, 1
+   9              		.eabi_attribute 30, 6
+  10              		.eabi_attribute 18, 4
+  11              		.file	"flotante.c"
+  21              	.Ltext0:
+  22              		.file 1 "../flotante.c"
+ 968              		.align	2
+ 969              		.global	main
+ 971              	main:
+ 972              	.LFB0:
+   1:../flotante.c **** 
+   2:../flotante.c **** float f1,f2; // 4 bytes
+   3:../flotante.c **** double d1; // 8 bytes
+   4:../flotante.c **** int main() {
+ 973              		.loc 1 4 0
+ 974              		.cfi_startproc
+ 975              		@ Function supports interworking.
+ 976              		@ args = 0, pretend = 0, frame = 0
+ 977              		@ frame_needed = 1, uses_anonymous_args = 0
+ 978 0000 0DC0A0E1 		mov	ip, sp
+ 979              	.LCFI0:
+ 980              		.cfi_def_cfa_register 12
+ 981 0004 10D82DE9 		stmfd	sp!, {r4, fp, ip, lr, pc}
+ 982 0008 04B04CE2 		sub	fp, ip, #4
+ 983              		.cfi_offset 14, -8
+ 984              		.cfi_offset 13, -12
+ 985              		.cfi_offset 11, -16
+ 986              		.cfi_offset 4, -20
+ 987              	.LCFI1:
+ 988              		.cfi_def_cfa 11, 4
+   5:../flotante.c **** 
+   6:../flotante.c **** 	// representacion de reales en punto flotante
+   7:../flotante.c ****   // Comprobar la ubicacion de cada variable
+   8:../flotante.c ****   // Determinar mantisa y exponente de cada uno
+   9:../flotante.c ****   f1 = 1.2;  
+ 989              		.loc 1 9 0
+ 990 000c 3C309FE5 		ldr	r3, .L2+8
+ 991 0010 3C209FE5 		ldr	r2, .L2+12	@ float
+ 992 0014 002083E5 		str	r2, [r3, #0]	@ float
+  10:../flotante.c **** 	f2 =  -1.1;  
+ 993              		.loc 1 10 0
+ 994 0018 38309FE5 		ldr	r3, .L2+16
+ 995 001c 38209FE5 		ldr	r2, .L2+20	@ float
+ 996 0020 002083E5 		str	r2, [r3, #0]	@ float
+  11:../flotante.c ****   d1 = 1.2; 
+ 997              		.loc 1 11 0
+ 998 0024 34209FE5 		ldr	r2, .L2+24
+ 999 0028 18408FE2 		adr	r4, .L2
+ 1000 002c 180094E8 		ldmia	r4, {r3-r4}
+ 1001 0030 180082E8 		stmia	r2, {r3-r4}
+  12:../flotante.c ****   return 0;
+ 1002              		.loc 1 12 0
+ 1003 0034 0030A0E3 		mov	r3, #0
+  13:../flotante.c **** }
+ 1004              		.loc 1 13 0
+ 1005 0038 0300A0E1 		mov	r0, r3
+ 1006 003c 10D04BE2 		sub	sp, fp, #16
+ 1007 0040 10689DE8 		ldmfd	sp, {r4, fp, sp, lr}
+ 1008 0044 1EFF2FE1 		bx	lr
+ 1009              	.L3:
+ 1010              		.align	3
+ 1011              	.L2:
+ 1012 0048 33333333 		.word	858993459
+ 1013 004c 3333F33F 		.word	1072902963
+ 1014 0050 00000000 		.word	f1
+ 1015 0054 9A99993F 		.word	1067030938
+ 1016 0058 00000000 		.word	f2
+ 1017 005c CDCC8CBF 		.word	-1081291571
+ 1018 0060 00000000 		.word	d1
+ 1019              		.cfi_endproc
+ 1020              	.LFE0:
+ 1022              	.Letext0:
+DEFINED SYMBOLS
+                            *ABS*:00000000 flotante.c
+                            *COM*:00000004 f1
+                            *COM*:00000004 f2
+                            *COM*:00000008 d1
+C:\Users\ignac\AppData\Local\Temp\ccxufSQS.s:968    .text:00000000 $a
+C:\Users\ignac\AppData\Local\Temp\ccxufSQS.s:971    .text:00000000 main
+C:\Users\ignac\AppData\Local\Temp\ccxufSQS.s:1012   .text:00000048 $d
+                     .debug_frame:00000010 $d
+C:\Users\ignac\AppData\Local\Temp\ccxufSQS.s:1023   .text:00000064 $a
+
+NO UNDEFINED SYMBOLS

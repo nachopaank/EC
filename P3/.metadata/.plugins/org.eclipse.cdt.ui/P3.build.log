@@ -1,0 +1,71 @@
+11:06:46 **** Incremental Build of configuration Debug for project P3 ****
+cs-make all 
+'Building file: ../D8Led.c'
+'Invoking: ARM Sourcery Windows GCC C Compiler'
+arm-none-eabi-gcc -O0 -Wall -Wa,-adhlns="D8Led.o.lst" -c -fmessage-length=0 -mapcs-frame -MMD -MP -MF"D8Led.d" -MT"D8Led.d" -mcpu=arm7tdmi -g3 -gdwarf-2 -o "D8Led.o" "../D8Led.c"
+'Finished building: ../D8Led.c'
+' '
+'Building file: ../button.c'
+'Invoking: ARM Sourcery Windows GCC C Compiler'
+arm-none-eabi-gcc -O0 -Wall -Wa,-adhlns="button.o.lst" -c -fmessage-length=0 -mapcs-frame -MMD -MP -MF"button.d" -MT"button.d" -mcpu=arm7tdmi -g3 -gdwarf-2 -o "button.o" "../button.c"
+'Finished building: ../button.c'
+' '
+'Building file: ../gpio.c'
+'Invoking: ARM Sourcery Windows GCC C Compiler'
+arm-none-eabi-gcc -O0 -Wall -Wa,-adhlns="gpio.o.lst" -c -fmessage-length=0 -mapcs-frame -MMD -MP -MF"gpio.d" -MT"gpio.d" -mcpu=arm7tdmi -g3 -gdwarf-2 -o "gpio.o" "../gpio.c"
+'Finished building: ../gpio.c'
+' '
+'Building file: ../init.S'
+'Invoking: ARM Sourcery Windows GCC Assembler'
+arm-none-eabi-gcc -x assembler-with-cpp -Wall -Wa,-adhlns="init.o.lst" -c -fmessage-length=0 -MMD -MP -MF"init.d" -MT"init.d" -mcpu=arm7tdmi -g3 -gdwarf-2 -o "init.o" "../init.S"
+'Finished building: ../init.S'
+' '
+'Building file: ../intcontroller.c'
+'Invoking: ARM Sourcery Windows GCC C Compiler'
+arm-none-eabi-gcc -O0 -Wall -Wa,-adhlns="intcontroller.o.lst" -c -fmessage-length=0 -mapcs-frame -MMD -MP -MF"intcontroller.d" -MT"intcontroller.d" -mcpu=arm7tdmi -g3 -gdwarf-2 -o "intcontroller.o" "../intcontroller.c"
+'Finished building: ../intcontroller.c'
+' '
+'Building file: ../keyboard.c'
+'Invoking: ARM Sourcery Windows GCC C Compiler'
+arm-none-eabi-gcc -O0 -Wall -Wa,-adhlns="keyboard.o.lst" -c -fmessage-length=0 -mapcs-frame -MMD -MP -MF"keyboard.d" -MT"keyboard.d" -mcpu=arm7tdmi -g3 -gdwarf-2 -o "keyboard.o" "../keyboard.c"
+'Finished building: ../keyboard.c'
+' '
+'Building file: ../leds.c'
+'Invoking: ARM Sourcery Windows GCC C Compiler'
+arm-none-eabi-gcc -O0 -Wall -Wa,-adhlns="leds.o.lst" -c -fmessage-length=0 -mapcs-frame -MMD -MP -MF"leds.d" -MT"leds.d" -mcpu=arm7tdmi -g3 -gdwarf-2 -o "leds.o" "../leds.c"
+../leds.c: In function 'leds_init':
+../leds.c:38:2: warning: passing argument 2 of 'portG_read' makes pointer from integer without a cast
+../gpio.h:32:5: note: expected 'enum digital *' but argument is of type 'int'
+../leds.c:39:2: warning: passing argument 2 of 'portG_read' makes pointer from integer without a cast
+../gpio.h:32:5: note: expected 'enum digital *' but argument is of type 'int'
+'Finished building: ../leds.c'
+' '
+'Building file: ../main.c'
+'Invoking: ARM Sourcery Windows GCC C Compiler'
+arm-none-eabi-gcc -O0 -Wall -Wa,-adhlns="main.o.lst" -c -fmessage-length=0 -mapcs-frame -MMD -MP -MF"main.d" -MT"main.d" -mcpu=arm7tdmi -g3 -gdwarf-2 -o "main.o" "../main.c"
+'Finished building: ../main.c'
+' '
+'Building file: ../timer.c'
+'Invoking: ARM Sourcery Windows GCC C Compiler'
+arm-none-eabi-gcc -O0 -Wall -Wa,-adhlns="timer.o.lst" -c -fmessage-length=0 -mapcs-frame -MMD -MP -MF"timer.d" -MT"timer.d" -mcpu=arm7tdmi -g3 -gdwarf-2 -o "timer.o" "../timer.c"
+../timer.c: In function 'tmr_set_divider':
+../timer.c:30:6: warning: unused variable 'ret'
+'Finished building: ../timer.c'
+' '
+'Building file: ../utils.c'
+'Invoking: ARM Sourcery Windows GCC C Compiler'
+arm-none-eabi-gcc -O0 -Wall -Wa,-adhlns="utils.o.lst" -c -fmessage-length=0 -mapcs-frame -MMD -MP -MF"utils.d" -MT"utils.d" -mcpu=arm7tdmi -g3 -gdwarf-2 -o "utils.o" "../utils.c"
+'Finished building: ../utils.c'
+' '
+'Building target: P3.elf'
+'Invoking: ARM Sourcery Windows GCC C Linker'
+arm-none-eabi-gcc -nostartfiles -Wl,-Map,P3.map -mcpu=arm7tdmi -g3 -gdwarf-2 -o "P3.elf"  ./D8Led.o ./button.o ./gpio.o ./init.o ./intcontroller.o ./keyboard.o ./leds.o ./main.o ./timer.o ./utils.o   
+d:/ec/eclipsearm/sourcery-g++-lite-arm-2011.03/bin/../lib/gcc/arm-none-eabi/4.5.2/../../../../arm-none-eabi/bin/ld.exe: warning: cannot find entry symbol _start; defaulting to 00008000
+./init.o: In function `InitStacks':
+D:\EC\PracticasEC\P3\P3\Debug/../init.S:129: undefined reference to `Image_ZI_Base'
+D:\EC\PracticasEC\P3\P3\Debug/../init.S:129: undefined reference to `Image_ZI_Limit'
+collect2: ld returned 1 exit status
+cs-make: *** [P3.elf] Error 1
+
+11:06:49 Build Finished (took 3s.843ms)
+

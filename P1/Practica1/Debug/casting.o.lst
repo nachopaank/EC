@@ -1,0 +1,117 @@
+   1              		.cpu arm7tdmi
+   2              		.fpu softvfp
+   3              		.eabi_attribute 20, 1
+   4              		.eabi_attribute 21, 1
+   5              		.eabi_attribute 23, 3
+   6              		.eabi_attribute 24, 1
+   7              		.eabi_attribute 25, 1
+   8              		.eabi_attribute 26, 1
+   9              		.eabi_attribute 30, 6
+  10              		.eabi_attribute 18, 4
+  11              		.file	"casting.c"
+  21              	.Ltext0:
+  22              		.file 1 "../casting.c"
+ 971              		.align	2
+ 972              		.global	main
+ 974              	main:
+ 975              	.LFB0:
+   1:../casting.c  **** 
+   2:../casting.c  **** int x;
+   3:../casting.c  **** short y;
+   4:../casting.c  **** char z;
+   5:../casting.c  **** float f1;
+   6:../casting.c  **** 
+   7:../casting.c  **** int main() {
+ 976              		.loc 1 7 0
+ 977              		.cfi_startproc
+ 978              		@ Function supports interworking.
+ 979              		@ args = 0, pretend = 0, frame = 0
+ 980              		@ frame_needed = 1, uses_anonymous_args = 0
+ 981 0000 0DC0A0E1 		mov	ip, sp
+ 982              	.LCFI0:
+ 983              		.cfi_def_cfa_register 12
+ 984 0004 00D82DE9 		stmfd	sp!, {fp, ip, lr, pc}
+ 985 0008 04B04CE2 		sub	fp, ip, #4
+ 986              		.cfi_offset 14, -8
+ 987              		.cfi_offset 13, -12
+ 988              		.cfi_offset 11, -16
+ 989              	.LCFI1:
+ 990              		.cfi_def_cfa 11, 4
+   8:../casting.c  ****   // casting
+   9:../casting.c  ****     x = 234; 
+ 991              		.loc 1 9 0
+ 992 000c 88309FE5 		ldr	r3, .L2
+ 993 0010 EA20A0E3 		mov	r2, #234
+ 994 0014 002083E5 		str	r2, [r3, #0]
+  10:../casting.c  ****     y = x; 
+ 995              		.loc 1 10 0
+ 996 0018 7C309FE5 		ldr	r3, .L2
+ 997 001c 003093E5 		ldr	r3, [r3, #0]
+ 998 0020 0338A0E1 		mov	r3, r3, asl #16
+ 999 0024 2328A0E1 		mov	r2, r3, lsr #16
+ 1000 0028 70309FE5 		ldr	r3, .L2+4
+ 1001 002c B020C3E1 		strh	r2, [r3, #0]	@ movhi
+  11:../casting.c  ****     z = x; // Comprueba su valor en el visor de variables
+ 1002              		.loc 1 11 0
+ 1003 0030 64309FE5 		ldr	r3, .L2
+ 1004 0034 003093E5 		ldr	r3, [r3, #0]
+ 1005 0038 FF2003E2 		and	r2, r3, #255
+ 1006 003c 60309FE5 		ldr	r3, .L2+8
+ 1007 0040 0020C3E5 		strb	r2, [r3, #0]
+  12:../casting.c  ****     f1 = (float) x; 
+ 1008              		.loc 1 12 0
+ 1009 0044 50309FE5 		ldr	r3, .L2
+ 1010 0048 003093E5 		ldr	r3, [r3, #0]
+ 1011 004c 0300A0E1 		mov	r0, r3
+ 1012 0050 FEFFFFEB 		bl	__aeabi_i2f
+ 1013 0054 0020A0E1 		mov	r2, r0
+ 1014 0058 48309FE5 		ldr	r3, .L2+12
+ 1015 005c 002083E5 		str	r2, [r3, #0]	@ float
+  13:../casting.c  ****     f1 = 3.4;
+ 1016              		.loc 1 13 0
+ 1017 0060 40309FE5 		ldr	r3, .L2+12
+ 1018 0064 40209FE5 		ldr	r2, .L2+16	@ float
+ 1019 0068 002083E5 		str	r2, [r3, #0]	@ float
+  14:../casting.c  ****     x = (int) f1; 
+ 1020              		.loc 1 14 0
+ 1021 006c 34309FE5 		ldr	r3, .L2+12
+ 1022 0070 003093E5 		ldr	r3, [r3, #0]	@ float
+ 1023 0074 0300A0E1 		mov	r0, r3
+ 1024 0078 FEFFFFEB 		bl	__aeabi_f2iz
+ 1025 007c 0020A0E1 		mov	r2, r0
+ 1026 0080 14309FE5 		ldr	r3, .L2
+ 1027 0084 002083E5 		str	r2, [r3, #0]
+  15:../casting.c  ****     return 0;
+ 1028              		.loc 1 15 0
+ 1029 0088 0030A0E3 		mov	r3, #0
+  16:../casting.c  **** }
+ 1030              		.loc 1 16 0
+ 1031 008c 0300A0E1 		mov	r0, r3
+ 1032 0090 0CD04BE2 		sub	sp, fp, #12
+ 1033 0094 00689DE8 		ldmfd	sp, {fp, sp, lr}
+ 1034 0098 1EFF2FE1 		bx	lr
+ 1035              	.L3:
+ 1036              		.align	2
+ 1037              	.L2:
+ 1038 009c 00000000 		.word	x
+ 1039 00a0 00000000 		.word	y
+ 1040 00a4 00000000 		.word	z
+ 1041 00a8 00000000 		.word	f1
+ 1042 00ac 9A995940 		.word	1079613850
+ 1043              		.cfi_endproc
+ 1044              	.LFE0:
+ 1046              	.Letext0:
+DEFINED SYMBOLS
+                            *ABS*:00000000 casting.c
+                            *COM*:00000004 x
+                            *COM*:00000002 y
+                            *COM*:00000001 z
+                            *COM*:00000004 f1
+C:\Users\ignac\AppData\Local\Temp\ccHHEbYq.s:971    .text:00000000 $a
+C:\Users\ignac\AppData\Local\Temp\ccHHEbYq.s:974    .text:00000000 main
+C:\Users\ignac\AppData\Local\Temp\ccHHEbYq.s:1038   .text:0000009c $d
+                     .debug_frame:00000010 $d
+
+UNDEFINED SYMBOLS
+__aeabi_i2f
+__aeabi_f2iz

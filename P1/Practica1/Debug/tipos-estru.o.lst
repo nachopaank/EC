@@ -1,0 +1,204 @@
+   1              		.cpu arm7tdmi
+   2              		.fpu softvfp
+   3              		.eabi_attribute 20, 1
+   4              		.eabi_attribute 21, 1
+   5              		.eabi_attribute 23, 3
+   6              		.eabi_attribute 24, 1
+   7              		.eabi_attribute 25, 1
+   8              		.eabi_attribute 26, 1
+   9              		.eabi_attribute 30, 6
+  10              		.eabi_attribute 18, 4
+  11              		.file	"tipos-estru.c"
+  21              	.Ltext0:
+  22              		.file 1 "../tipos-estru.c"
+ 973              		.align	2
+ 976              	tabla:
+ 977 0000 01000000 		.word	1
+ 978 0004 03000000 		.word	3
+ 979 0008 05000000 		.word	5
+ 980 000c 07000000 		.word	7
+ 981 0010 09000000 		.word	9
+ 982 0014 0B000000 		.word	11
+ 983 0018 0D000000 		.word	13
+ 984 001c 0F000000 		.word	15
+ 985              		.bss
+ 986              		.align	2
+ 987              	status:
+ 988 0000 00000000 		.space	4
+ 989              		.comm	puntero,4,4
+ 990              		.global	str_tecla
+ 991              		.data
+ 992              		.align	2
+ 995              	str_tecla:
+ 996 0020 0A546563 		.ascii	"\012Tecla pulsada\000\000"
+ 996      6C612070 
+ 996      756C7361 
+ 996      64610000 
+ 997 0030 00000000 		.space	11
+ 997      00000000 
+ 997      000000
+ 998              		.comm	puntero2,4,4
+ 999 003b 00       		.text
+ 1000              		.align	2
+ 1001              		.global	main
+ 1003              	main:
+ 1004              	.LFB0:
+   1:../tipos-estru.c **** // Arrays, struct, cadenas de caracteres, punteros, operaciones sobre bits
+   2:../tipos-estru.c **** 
+   3:../tipos-estru.c **** struct t_dummy {
+   4:../tipos-estru.c **** 	char cx;
+   5:../tipos-estru.c **** 	char cy;
+   6:../tipos-estru.c **** 	int lat;
+   7:../tipos-estru.c **** 	int longitud;
+   8:../tipos-estru.c **** };
+   9:../tipos-estru.c **** struct t_dummy st;
+  10:../tipos-estru.c **** 
+  11:../tipos-estru.c **** unsigned int tabla[8]= { 0x1, 0x3, 0x5, 0x7, 0x9, 0xB, 0xD, 0xF };
+  12:../tipos-estru.c **** 
+  13:../tipos-estru.c **** // Operaciones sobre bits
+  14:../tipos-estru.c **** #define LED1 0x01
+  15:../tipos-estru.c **** #define LED2 0x02
+  16:../tipos-estru.c **** static unsigned int status = 0;
+  17:../tipos-estru.c **** // Punteros
+  18:../tipos-estru.c **** 
+  19:../tipos-estru.c **** unsigned int * puntero;
+  20:../tipos-estru.c **** char str_tecla[27] = "\nTecla pulsada\0";;
+  21:../tipos-estru.c **** char * puntero2;
+  22:../tipos-estru.c **** 
+  23:../tipos-estru.c **** int main() {
+ 1005              		.loc 1 23 0
+ 1006              		.cfi_startproc
+ 1007              		@ Function supports interworking.
+ 1008              		@ args = 0, pretend = 0, frame = 0
+ 1009              		@ frame_needed = 1, uses_anonymous_args = 0
+ 1010 0000 0DC0A0E1 		mov	ip, sp
+ 1011              	.LCFI0:
+ 1012              		.cfi_def_cfa_register 12
+ 1013 0004 00D82DE9 		stmfd	sp!, {fp, ip, lr, pc}
+ 1014 0008 04B04CE2 		sub	fp, ip, #4
+ 1015              		.cfi_offset 14, -8
+ 1016              		.cfi_offset 13, -12
+ 1017              		.cfi_offset 11, -16
+ 1018              	.LCFI1:
+ 1019              		.cfi_def_cfa 11, 4
+  24:../tipos-estru.c **** 
+  25:../tipos-estru.c **** 	st.cx = 1;
+ 1020              		.loc 1 25 0
+ 1021 000c EC309FE5 		ldr	r3, .L2
+ 1022 0010 0120A0E3 		mov	r2, #1
+ 1023 0014 0020C3E5 		strb	r2, [r3, #0]
+  26:../tipos-estru.c **** 	st.cy = 2;
+ 1024              		.loc 1 26 0
+ 1025 0018 E0309FE5 		ldr	r3, .L2
+ 1026 001c 0220A0E3 		mov	r2, #2
+ 1027 0020 0120C3E5 		strb	r2, [r3, #1]
+  27:../tipos-estru.c **** 	st.lat = 3;
+ 1028              		.loc 1 27 0
+ 1029 0024 D4309FE5 		ldr	r3, .L2
+ 1030 0028 0320A0E3 		mov	r2, #3
+ 1031 002c 042083E5 		str	r2, [r3, #4]
+  28:../tipos-estru.c **** 	st.longitud = 4;
+ 1032              		.loc 1 28 0
+ 1033 0030 C8309FE5 		ldr	r3, .L2
+ 1034 0034 0420A0E3 		mov	r2, #4
+ 1035 0038 082083E5 		str	r2, [r3, #8]
+  29:../tipos-estru.c **** 
+  30:../tipos-estru.c **** 	status |=  LED1;
+ 1036              		.loc 1 30 0
+ 1037 003c C0309FE5 		ldr	r3, .L2+4
+ 1038 0040 003093E5 		ldr	r3, [r3, #0]
+ 1039 0044 012083E3 		orr	r2, r3, #1
+ 1040 0048 B4309FE5 		ldr	r3, .L2+4
+ 1041 004c 002083E5 		str	r2, [r3, #0]
+  31:../tipos-estru.c **** 	status &=  ~LED1;
+ 1042              		.loc 1 31 0
+ 1043 0050 AC309FE5 		ldr	r3, .L2+4
+ 1044 0054 003093E5 		ldr	r3, [r3, #0]
+ 1045 0058 0120C3E3 		bic	r2, r3, #1
+ 1046 005c A0309FE5 		ldr	r3, .L2+4
+ 1047 0060 002083E5 		str	r2, [r3, #0]
+  32:../tipos-estru.c **** 	status ^= (LED1 | LED2);
+ 1048              		.loc 1 32 0
+ 1049 0064 98309FE5 		ldr	r3, .L2+4
+ 1050 0068 003093E5 		ldr	r3, [r3, #0]
+ 1051 006c 032023E2 		eor	r2, r3, #3
+ 1052 0070 8C309FE5 		ldr	r3, .L2+4
+ 1053 0074 002083E5 		str	r2, [r3, #0]
+  33:../tipos-estru.c **** 	status = (tabla[7]<< 4 ) | tabla [2] | (tabla[4]<<8);
+ 1054              		.loc 1 33 0
+ 1055 0078 88309FE5 		ldr	r3, .L2+8
+ 1056 007c 1C3093E5 		ldr	r3, [r3, #28]
+ 1057 0080 0322A0E1 		mov	r2, r3, asl #4
+ 1058 0084 7C309FE5 		ldr	r3, .L2+8
+ 1059 0088 083093E5 		ldr	r3, [r3, #8]
+ 1060 008c 032082E1 		orr	r2, r2, r3
+ 1061 0090 70309FE5 		ldr	r3, .L2+8
+ 1062 0094 103093E5 		ldr	r3, [r3, #16]
+ 1063 0098 0334A0E1 		mov	r3, r3, asl #8
+ 1064 009c 032082E1 		orr	r2, r2, r3
+ 1065 00a0 5C309FE5 		ldr	r3, .L2+4
+ 1066 00a4 002083E5 		str	r2, [r3, #0]
+  34:../tipos-estru.c **** 	status  = (status & ~(0xf << 12)) | (0x7 << 12);
+ 1067              		.loc 1 34 0
+ 1068 00a8 54309FE5 		ldr	r3, .L2+4
+ 1069 00ac 003093E5 		ldr	r3, [r3, #0]
+ 1070 00b0 0F3AC3E3 		bic	r3, r3, #61440
+ 1071 00b4 072A83E3 		orr	r2, r3, #28672
+ 1072 00b8 44309FE5 		ldr	r3, .L2+4
+ 1073 00bc 002083E5 		str	r2, [r3, #0]
+  35:../tipos-estru.c **** // punteros y cadenas de caracteres
+  36:../tipos-estru.c **** 	puntero = tabla;
+ 1074              		.loc 1 36 0
+ 1075 00c0 44309FE5 		ldr	r3, .L2+12
+ 1076 00c4 3C209FE5 		ldr	r2, .L2+8
+ 1077 00c8 002083E5 		str	r2, [r3, #0]
+  37:../tipos-estru.c **** 	puntero++;
+ 1078              		.loc 1 37 0
+ 1079 00cc 38309FE5 		ldr	r3, .L2+12
+ 1080 00d0 003093E5 		ldr	r3, [r3, #0]
+ 1081 00d4 042083E2 		add	r2, r3, #4
+ 1082 00d8 2C309FE5 		ldr	r3, .L2+12
+ 1083 00dc 002083E5 		str	r2, [r3, #0]
+  38:../tipos-estru.c **** 
+  39:../tipos-estru.c **** 	puntero2 = str_tecla;
+ 1084              		.loc 1 39 0
+ 1085 00e0 28309FE5 		ldr	r3, .L2+16
+ 1086 00e4 28209FE5 		ldr	r2, .L2+20
+ 1087 00e8 002083E5 		str	r2, [r3, #0]
+  40:../tipos-estru.c **** 	return 0;
+ 1088              		.loc 1 40 0
+ 1089 00ec 0030A0E3 		mov	r3, #0
+  41:../tipos-estru.c **** }
+ 1090              		.loc 1 41 0
+ 1091 00f0 0300A0E1 		mov	r0, r3
+ 1092 00f4 0CD04BE2 		sub	sp, fp, #12
+ 1093 00f8 00689DE8 		ldmfd	sp, {fp, sp, lr}
+ 1094 00fc 1EFF2FE1 		bx	lr
+ 1095              	.L3:
+ 1096              		.align	2
+ 1097              	.L2:
+ 1098 0100 00000000 		.word	st
+ 1099 0104 00000000 		.word	status
+ 1100 0108 00000000 		.word	tabla
+ 1101 010c 00000000 		.word	puntero
+ 1102 0110 00000000 		.word	puntero2
+ 1103 0114 00000000 		.word	str_tecla
+ 1104              		.cfi_endproc
+ 1105              	.LFE0:
+ 1107              	.Letext0:
+DEFINED SYMBOLS
+                            *ABS*:00000000 tipos-estru.c
+                            *COM*:0000000c st
+C:\Users\ignac\AppData\Local\Temp\ccKM13De.s:976    .data:00000000 tabla
+C:\Users\ignac\AppData\Local\Temp\ccKM13De.s:973    .data:00000000 $d
+C:\Users\ignac\AppData\Local\Temp\ccKM13De.s:986    .bss:00000000 $d
+C:\Users\ignac\AppData\Local\Temp\ccKM13De.s:987    .bss:00000000 status
+                            *COM*:00000004 puntero
+C:\Users\ignac\AppData\Local\Temp\ccKM13De.s:995    .data:00000020 str_tecla
+                            *COM*:00000004 puntero2
+C:\Users\ignac\AppData\Local\Temp\ccKM13De.s:1000   .text:00000000 $a
+C:\Users\ignac\AppData\Local\Temp\ccKM13De.s:1003   .text:00000000 main
+C:\Users\ignac\AppData\Local\Temp\ccKM13De.s:1098   .text:00000100 $d
+                     .debug_frame:00000010 $d
+
+NO UNDEFINED SYMBOLS

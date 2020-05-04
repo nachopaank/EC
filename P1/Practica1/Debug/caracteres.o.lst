@@ -1,0 +1,90 @@
+   1              		.cpu arm7tdmi
+   2              		.fpu softvfp
+   3              		.eabi_attribute 20, 1
+   4              		.eabi_attribute 21, 1
+   5              		.eabi_attribute 23, 3
+   6              		.eabi_attribute 24, 1
+   7              		.eabi_attribute 25, 1
+   8              		.eabi_attribute 26, 1
+   9              		.eabi_attribute 30, 6
+  10              		.eabi_attribute 18, 4
+  11              		.file	"caracteres.c"
+  21              	.Ltext0:
+  22              		.file 1 "../caracteres.c"
+ 967              		.align	2
+ 968              		.global	main
+ 970              	main:
+ 971              	.LFB0:
+   1:../caracteres.c **** 
+   2:../caracteres.c **** char x,y;
+   3:../caracteres.c **** 
+   4:../caracteres.c **** int main() {
+ 972              		.loc 1 4 0
+ 973              		.cfi_startproc
+ 974              		@ Function supports interworking.
+ 975              		@ args = 0, pretend = 0, frame = 8
+ 976              		@ frame_needed = 1, uses_anonymous_args = 0
+ 977 0000 0DC0A0E1 		mov	ip, sp
+ 978              	.LCFI0:
+ 979              		.cfi_def_cfa_register 12
+ 980 0004 00D82DE9 		stmfd	sp!, {fp, ip, lr, pc}
+ 981 0008 04B04CE2 		sub	fp, ip, #4
+ 982              		.cfi_offset 14, -8
+ 983              		.cfi_offset 13, -12
+ 984              		.cfi_offset 11, -16
+ 985              	.LCFI1:
+ 986              		.cfi_def_cfa 11, 4
+ 987 000c 08D04DE2 		sub	sp, sp, #8
+   5:../caracteres.c **** 
+   6:../caracteres.c ****   char a;
+   7:../caracteres.c ****    
+   8:../caracteres.c ****  // Comprobar lo que se almacena en cada caso
+   9:../caracteres.c ****  // y lo que se representaría por pantalla
+  10:../caracteres.c ****  // si se imprimiesen como caracteres
+  11:../caracteres.c ****   x = 'a'; 
+ 988              		.loc 1 11 0
+ 989 0010 40309FE5 		ldr	r3, .L2
+ 990 0014 6120A0E3 		mov	r2, #97
+ 991 0018 0020C3E5 		strb	r2, [r3, #0]
+  12:../caracteres.c ****   y = x + 3; 
+ 992              		.loc 1 12 0
+ 993 001c 34309FE5 		ldr	r3, .L2
+ 994 0020 0030D3E5 		ldrb	r3, [r3, #0]	@ zero_extendqisi2
+ 995 0024 033083E2 		add	r3, r3, #3
+ 996 0028 FF2003E2 		and	r2, r3, #255
+ 997 002c 28309FE5 		ldr	r3, .L2+4
+ 998 0030 0020C3E5 		strb	r2, [r3, #0]
+  13:../caracteres.c ****   a = x - 32; 
+ 999              		.loc 1 13 0
+ 1000 0034 1C309FE5 		ldr	r3, .L2
+ 1001 0038 0030D3E5 		ldrb	r3, [r3, #0]	@ zero_extendqisi2
+ 1002 003c 203043E2 		sub	r3, r3, #32
+ 1003 0040 0D304BE5 		strb	r3, [fp, #-13]
+  14:../caracteres.c ****   return 0; 
+ 1004              		.loc 1 14 0
+ 1005 0044 0030A0E3 		mov	r3, #0
+  15:../caracteres.c **** 
+  16:../caracteres.c **** }
+ 1006              		.loc 1 16 0
+ 1007 0048 0300A0E1 		mov	r0, r3
+ 1008 004c 0CD04BE2 		sub	sp, fp, #12
+ 1009 0050 00689DE8 		ldmfd	sp, {fp, sp, lr}
+ 1010 0054 1EFF2FE1 		bx	lr
+ 1011              	.L3:
+ 1012              		.align	2
+ 1013              	.L2:
+ 1014 0058 00000000 		.word	x
+ 1015 005c 00000000 		.word	y
+ 1016              		.cfi_endproc
+ 1017              	.LFE0:
+ 1019              	.Letext0:
+DEFINED SYMBOLS
+                            *ABS*:00000000 caracteres.c
+                            *COM*:00000001 x
+                            *COM*:00000001 y
+C:\Users\ignac\AppData\Local\Temp\ccBWrgYc.s:967    .text:00000000 $a
+C:\Users\ignac\AppData\Local\Temp\ccBWrgYc.s:970    .text:00000000 main
+C:\Users\ignac\AppData\Local\Temp\ccBWrgYc.s:1014   .text:00000058 $d
+                     .debug_frame:00000010 $d
+
+NO UNDEFINED SYMBOLS
